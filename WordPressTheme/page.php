@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 
-<p>テースト</p>
+<p>なんで成功したんでしょうか</p>
 
 <?php get_footer(); ?>
