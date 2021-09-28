@@ -1,0 +1,33 @@
+.c-page-top {
+  width: rem(45);
+  height: rem(45);
+  background: #fff;
+  position: fixed;
+  right: rem(21);
+  bottom: rem(41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ padding-top: rem(12);
+ transition:  all 0.3s;
+ }
+ 
+ .c-page-top:hover {
+   background: #333;
+ 
+   .c-page-top__angle {
+     border-top: 2px solid #fff;
+     border-left: 2px solid #fff;
+   }
+ }
+ 
+ .c-page-top__angle {
+   display: inline-block;
+   width: rem(20);
+   height: rem(20);
+   border-top: 2px solid #333;
+   border-left: 2px solid #333;
+   transform: rotate(45deg);
+   transition:  all 0.3s;
+ }
+ 
