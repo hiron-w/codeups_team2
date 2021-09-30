@@ -1,0 +1,20 @@
+.c-page{
+  background-color: black;
+  font-size: rem(16);
+  line-height: 1;
+  min-width: rem(24);
+  text-align: center;
+  color:white;
+  padding: rem(3) rem(6);
+  border: rem(1) solid white;
+  display: inline-block;
+  box-sizing: border-box;
+  letter-spacing: 0.0005em;
+}
+.c-page:hover{
+  background-color: #333;
+}
+.c-page.c-page--curent{
+  background-color: #F9F871;
+  color:black;
+}
