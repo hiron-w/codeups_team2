@@ -1,0 +1,53 @@
+.p-sub-mv {
+ width: 100%;
+ height: rem(425);
+ position: relative;
+ 
+ @include mq(tab) {
+   height: ren(370);
+
+ }
+}
+
+.p-suv-mv__img {
+ width: inherit;
+ height: inherit;
+
+}
+
+.p-suv-mv__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-sub-mv::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #111111;
+  opacity: 0.2;
+
+}
+
+.p-sub-mv__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ font-size: rem(30);
+ font-weight: 700;
+ line-height: 1;
+ letter-spacing: 0.0667em;
+ color: #fff;
+ z-index: 2;
+
+@include mq(tab) {
+  font-size: rem(35);
+  letter-spacing: 0.0571em;
+}
+}
