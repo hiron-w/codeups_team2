@@ -1,14 +1,10 @@
-<ul class="c-pager">
-  <li>
-    <%- include('../parts/_c-page-char', {link: '#', text: 'PREV'}) %>
-  </li>
-  <%var cnt = 4; %>
-  <% for (var i = 0; i < cnt; i++) { %>
-    <li>
-      <%- include('../parts/_c-page', {link: '#',text: i+1}) %>
-    </li>
-  <% } %>
-  <li>
-    <%- include('../parts/_c-page-char', {link: '#', text: 'NEXT'}) %>
-  </li>
-</ul>
+<div class="c-pager">
+  <a href="#" class="c-page c-page--prev">prev</a>
+  <div class="c-pager__pages">
+    <span class="c-page c-page--curent">1</span>
+    <a href="#" class="c-page">2</a>
+    <a href="#" class="c-page">3</a>
+    <a href="#" class="c-page">4</a>
+  </div>
+  <a href="#" class="c-page c-page--next">next</a>
+</div>

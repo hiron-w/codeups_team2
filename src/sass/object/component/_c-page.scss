@@ -1,8 +1,8 @@
 .c-page{
-  background-color: black;
+  margin-right: rem(16);
   font-size: rem(16);
   line-height: 1;
-  min-width: rem(24);
+  min-width: rem(24); //桁が増えた場合、サイズを大きくするため
   text-align: center;
   color:white;
   padding: rem(3) rem(6);
@@ -10,11 +10,39 @@
   display: inline-block;
   box-sizing: border-box;
   letter-spacing: 0.0005em;
+  text-transform: uppercase;
 }
+.c-page:last-child{
+  margin-right: 0;
+}
+
 .c-page:hover{
   background-color: #333;
 }
+
 .c-page.c-page--curent{
-  background-color: #F9F871;
+  background-color: white;
   color:black;
 }
+
+.c-page.c-page--next{
+  margin-left: rem(24);
+  min-width: rem(71);
+  padding: rem(3) rem(13);
+  letter-spacing: 0.002em;
+}
+
+.c-page.c-page--prev{
+  margin-right: rem(24);
+  min-width: rem(71);
+  padding: rem(3) rem(13);
+  letter-spacing: 0.002em;
+}
+
+.c-page.c-page--list{
+  margin-right: 0;
+  min-width: rem(71);
+  padding: rem(3) rem(13);
+  letter-spacing: 0.002em;
+}
+
