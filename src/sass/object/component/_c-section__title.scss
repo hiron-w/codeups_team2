@@ -13,22 +13,28 @@
     
 }
 
-.c-section__title::after{
-    content: 'section-title';
-    font-size: rem(50);
-    color: #F9F871;
-    font-family: 'Noto Serif', serif;
-    width: rem(300);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+// .c-section__title::after{
+//     content: 'contactttttt';
+//     font-size: rem(50);
+//     color: #F9F871;
+//     font-family: 'Noto Serif', serif;
+//     position: absolute;
+//     top: 5%;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     -webkit-transform: translateX(-50%);
+//     -moz-transform: translateX(-50%);
+//     -ms-transform: translateX(-50%);
+//     -o-transform: translateX(-50%);
 
-    @include mq(tab){
-        font-size: rem(110);
-    }
-}
+//     @include mq(tab){
+//         font-size: rem(110);
+//         width: rem(700);
+//         left: 0;
+//         transform: translateX(0);
+//         -webkit-transform: translateX(0);
+//         -moz-transform: translateX(0);
+//         -ms-transform: translateX(0);
+//         -o-transform: translateX(0);
+// }
+// }
