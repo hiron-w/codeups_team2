@@ -2,7 +2,7 @@
 //セクションタイトル
 .c-section__title{
     color: #fff;
-    background-color: #111;
+    // background-color: #111;
     font-size: rem(20);
     text-align: center;
     position: relative;
@@ -10,32 +10,8 @@
 
     @include mq(tab){
         font-size: rem(30);
+        line-height: calc( 35 / 30 );
     }
     
 }
 
-// .c-section__title::after{
-//     content: 'contactttttt';
-//     font-size: rem(50);
-//     color: #F9F871;
-//     font-family: 'Noto Serif', serif;
-//     position: absolute;
-//     top: 5%;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     -webkit-transform: translateX(-50%);
-//     -moz-transform: translateX(-50%);
-//     -ms-transform: translateX(-50%);
-//     -o-transform: translateX(-50%);
-
-//     @include mq(tab){
-//         font-size: rem(110);
-//         width: rem(700);
-//         left: 0;
-//         transform: translateX(0);
-//         -webkit-transform: translateX(0);
-//         -moz-transform: translateX(0);
-//         -ms-transform: translateX(0);
-//         -o-transform: translateX(0);
-// }
-// }
