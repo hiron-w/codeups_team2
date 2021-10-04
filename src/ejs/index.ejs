@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head') %>
+
   <body>
     <%- include('./common/_top-header') %>
       <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
-    <%- include('./common/_footer') %>
+        <%- include('./common/_footer') %>
 
 
-    <% for (var i=0; i < 4; i++) { %>
-      <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
-      <% } %>
+          <% for (var i=0; i < 4; i++) { %>
+            <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
+              <% } %>
 
-  
-      <%- include('./common/_section__title',{text:'テスト'}) %>
-      <%- include('./common/_section__title',{text:'テスト２'}) %>
+                <!--セクションタイトル日本語-->
+                <%- include('./common/_section__title',{text:'テスト'}) %>
+                  <%- include('./common/_section__title',{text:'テスト２'}) %>
 
-      <%- include('./common/_inquiry') %>
+                    <!--お問い合わせセクション-->
+                    <%- include('./common/_inquiry') %>
 
-      <%- include('./parts/_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
+                      <!--日付-->
 
-  </body>
-</html>
+                      <%- include('./parts/_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
+
+                        <!--カテゴリーのラベル-->
+                        <%- include('./parts/_c-label',{text:'カテゴリー1'}) %>
