@@ -1,0 +1,42 @@
+.wp-pagenavi {
+	clear: both;
+	// text-align:center;
+
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+  font-size: rem(16);
+  line-height: 1;
+  min-width: rem(24); //桁が増えた場合、サイズを大きくするため
+  color:white;
+  padding: rem(3) rem(6);
+  border: rem(1) solid white;
+  display: inline-block;
+  box-sizing: border-box;
+  letter-spacing: 0.0005em;
+  text-transform: uppercase;
+	transition: 0.3s ease-in-out;
+	text-align: center;
+	text-decoration: none;
+  margin-right: rem(16);
+}
+
+.wp-pagenavi > *:last-child {
+  margin-right: 0;
+}
+
+.wp-pagenavi a:hover{
+  background-color: #333;
+}
+.wp-pagenavi span.current{
+  background-color: white;
+  color:black;
+}
+
+.wp-pagenavi a.previouspostslink{
+  margin-right: rem(24);
+}
+
+.wp-pagenavi a.nextpostslink{
+  margin-left: rem(8);
+}
