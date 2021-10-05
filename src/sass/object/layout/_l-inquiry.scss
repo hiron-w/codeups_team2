@@ -1,0 +1,65 @@
+//問い合わせセクション//
+
+.l-inquiry{
+    padding-bottom: rem(64);
+
+    @include mq(tab){
+        padding-bottom: rem(149);
+    }
+}
+
+.l-inquiry__title{
+    position: relative;
+
+}
+
+.l-inquiry__title::after{
+    position: absolute;
+    content: 'Contact';
+    font-size: rem(50);
+    color: #F9F871;
+    font-family: 'Noto Serif', serif;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    // z-index: -1;
+
+    @include mq(tab){
+        font-size: rem(110);
+        // width: rem(700);
+        left: 0;
+        bottom: 0;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+}
+
+
+.l-inquiry__text{
+    margin-top: rem(20);
+
+    @include mq(tab){
+        margin-top: rem(24);
+    }
+}
+
+.l-inquiry__btn{
+    text-align: center;
+    margin: rem(40) auto 0;
+    width: 100%;
+    max-width: rem(335);
+
+    @include mq(tab){
+        margin-top: rem(60);
+        min-width: rem(360);
+    }
+    
+}
+
