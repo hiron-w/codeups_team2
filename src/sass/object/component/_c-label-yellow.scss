@@ -1,0 +1,10 @@
+
+//カテゴリーのラベル 黄色バージョン//
+.c-label-yellow{
+    display: inline-block;
+    font-size: rem(14);
+    color: #333;
+    border: 1px solid yellow;
+    background-color: yellow;
+    padding: rem(3) rem(10);
+}

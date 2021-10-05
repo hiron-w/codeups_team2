@@ -13,13 +13,14 @@
 }
 
 .l-inquiry__title{
-}
-
-.c-inquiry__title{
     position: relative;
+
 }
 
-.c-inquiry__title::after{
+.p-inquiry__title{
+}
+
+.l-inquiry__title::after{
     position: absolute;
     content: 'Contact';
     font-size: rem(50);
@@ -36,7 +37,7 @@
 
     @include mq(tab){
         font-size: rem(110);
-        width: rem(700);
+        // width: rem(700);
         left: 0;
         bottom: 0;
         transform: translateX(0);
@@ -56,7 +57,7 @@
     }
 }
 
-.c-inquiry__text{
+.p-inquiry__text{
     font-size: $font-size-base;
     letter-spacing: 0.025em;
     color: #ffff;
@@ -80,6 +81,6 @@
     
 }
 
-.c-inquiry__btn{
+.p-inquiry__btn{
     // color: #fff
 }

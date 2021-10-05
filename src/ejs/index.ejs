@@ -12,20 +12,25 @@
             <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
               <% } %>
 
-                <!--セクションタイトル日本語-->
-                <%- include('./common/_section__title',{text:'テスト'}) %>
-                  <%- include('./common/_section__title',{text:'テスト２'}) %>
+
+                <!--共通パーツサンプル（ひろこ）-->
+                <!--セクションタイトル日本語 ※文字色が白のため見えてません・・-->
+                <%- include('./parts/_c-section__title',{text:'制作実績'}) %>
+                  <%- include('./parts/_c-section__title',{text:'ブログ'}) %>
 
                     <!--お問い合わせセクション-->
                     <%- include('./common/_inquiry') %>
 
                       <!--日付-->
-
                       <%- include('./parts/_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
 
                         <!--カテゴリーのラベル-->
-                        <%- include('./parts/_c-label',{text:'カテゴリー1'}) %>
+                        <%- include('./parts/_c-label',{text:'カテゴリー'}) %>
+                          <!--カテゴリーのラベル黄色バージョン-->
+                          <%- include('./parts/_c-label-yellow',{text:'カテゴリー'}) %>
 
 
-          <!--カード-->
-                        <%- include('./parts/_c-card') %>
+                            <!--カード-->
+                            <%- include('./parts/_c-card') %>
+
+                              <!--共通パーツサンプル（ひろこ）ここまで-->
