@@ -1,0 +1,32 @@
+.c-pc-nav{
+  display:none;
+
+  @include mq("pc"){
+    display: block;
+  }
+}
+
+.c-pc-nav__items{
+  padding-right: rem(30);
+  letter-spacing: rem(2);
+  line-height:rem(50);
+  position: relative;
+
+  &::after{
+    position:absolute;
+    content:'';
+    left:0;
+    bottom:rem(-5);
+    width:calc( 100% - #{rem(30)});
+    height:rem(1);
+    background: $yellow;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+  }
+
+  &:hover::after{
+      transform: scale(1,1);
+  }
+}
+

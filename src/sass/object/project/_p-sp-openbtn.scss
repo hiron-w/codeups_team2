@@ -1,0 +1,47 @@
+.p-sp-openbtn{
+  position: relative;
+  width:rem(24);
+  height:rem(50);
+
+  @include mq("pc"){
+    display:none;
+  }
+}
+
+.p-sp-openbtn span{
+  position: absolute;
+  right:0;
+  display: inline-block;
+  width:rem(24);
+  height:rem(2);
+  background: $white;
+  border-radius:rem(2);
+  transition: all .4s;
+}
+
+.p-sp-openbtn span:nth-of-type(1) {
+top:rem(16);
+}
+
+.p-sp-openbtn span:nth-of-type(2) {
+top:rem(24);
+}
+
+.p-sp-openbtn span:nth-of-type(3) {
+top:rem(32);
+}
+
+
+.p-sp-openbtn.open span:nth-of-type(1) {
+  top:rem(24);
+  transform:rotate(-45deg);
+}
+
+.p-sp-openbtn.open span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.p-sp-openbtn.open span:nth-of-type(3) {
+  top:rem(24);
+  transform:rotate(45deg);
+}

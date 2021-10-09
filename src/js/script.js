@@ -33,10 +33,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //ドロワーメニュー
-  $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
-  });
+  $(".p-sp-openbtn").click(function () {
+    if($('.p-sp-openbtn').hasClass('open')){
+      $(".p-sp-nav").fadeOut();
+      $(this).removeClass('open');
+    }else{
+      $(".p-sp-nav").fadeIn();
+      $(this).addClass('open');
+    }
+});
+
+  $(".p-sp-nav a").click(function () {
+    $(".p-sp-openbtn").removeClass('open');
+    $(".p-sp-nav").fadeOut();
+});
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
