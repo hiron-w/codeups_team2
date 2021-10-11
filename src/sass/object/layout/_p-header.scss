@@ -1,4 +1,4 @@
-.l-header{
+.p-header{
   height:rem(50);
   position: fixed;
   z-index: 999;
@@ -7,7 +7,7 @@
   transition: background-color 0.3s;
 }
 
-.l-header-wrap{
+.p-header-wrap{
   display: flex;
   align-items: center;
   padding:rem(2) rem(22);
@@ -17,11 +17,11 @@
   }
 }
 
-.l-header__item{
+.p-header__item{
   margin-left:auto;
 }
 
-.l-header__logo img{
+.p-header__logo img{
   width:rem(70);
 
   @include mq("pc") {
