@@ -16,9 +16,16 @@
     </p>
     
     <div class="c-card__meta">
-      <%- include('./_c-label-blog',{text:'カテゴリー'}) %>
+      <div class="c-card__meta--cat">
+        <%- include('./_c-label-blog',{text:'カテゴリー'}) %>
+        <%- include('./_c-label-blog',{text:'カテゴリー'}) %>
+
+      </div><!-- /.c-card__meta-cat -->
       
-      <%- include('./_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
+      <div class="c-card__mata--date">
+        <%- include('./_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
+
+      </div><!-- /.c-card__mata-date -->
       
     </div><!-- /.c-card__meta -->
     

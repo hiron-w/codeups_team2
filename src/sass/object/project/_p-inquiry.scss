@@ -13,7 +13,7 @@
 .p-inquiry__text{
     font-size: $font-size-base;
     letter-spacing: 0.025em;
-    color: #ffff;
+    color: #fff;
 
     @include mq(tab){
         text-align: center;
