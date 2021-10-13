@@ -6,6 +6,7 @@
     text-align: center;
     position: relative;
     letter-spacing: rem(2);
+    background-color: #333;
 
     @include mq(tab){
         font-size: rem(30);
