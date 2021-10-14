@@ -1,0 +1,13 @@
+.l-cards{
+    display: flex;
+
+}
+
+.l-cards__item{
+    margin-right: rem(24);
+	width: calc(33.3333333% - 48px / 3);
+}
+
+.l-cards__item:nth-child(3n) {
+    margin-right: 0;
+}

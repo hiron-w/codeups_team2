@@ -15,29 +15,51 @@
 
                 <!--共通パーツサンプル（ひろこ）-->
                 <!--セクションタイトル日本語 -->
+                <p>セクションタイトル</p>
                 <%- include('./parts/_c-section__title',{text:'制作実績'}) %>
                   <%- include('./parts/_c-section__title',{text:'ブログ'}) %>
 
                     <!--お問い合わせセクション-->
+                    <p>お問い合わせセクション</p>
                     <%- include('./common/_inquiry') %>
 
                       <!--日付-->
+                      <p>日付</p>
                       <%- include('./parts/_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
 
                         <!--カテゴリーのラベル-->
+                        <p>カテゴリーのラベル</p>
                         <%- include('./parts/_c-label',{text:'カテゴリ'}) %>
+
                           <!--カテゴリーのラベル黄色バージョン-->
+                          <p>カテゴリーのラベル（ブログ用・黄色）</p>
                           <%- include('./parts/_c-label-blog',{text:'カテゴリー'}) %>
 
-                        <div class="p-cards">
-                          <!--カード-->
+                          <!--カード単体-->
+                          <p>カード単体p-card</p>
                           <div class="p-card__item">
                             <%- include('./parts/_p-card') %>
                           </div><!-- /.p-card__item -->
-                          <%- include('./parts/_p-card') %>
-                          <%- include('./parts/_p-card') %>
+
+
+                          <!--カード複数-->
+                          <p>カード複数p-cards</p>
+                        <div class="l-cards p-cards">
+                          <!--カード-->
+                          <div class="l-cards__item p-card__item">
+                            <%- include('./parts/_p-card') %>
+                          </div><!-- /.p-card__item -->
+                          <div class="l-cards__item p-card__item">
+                            <%- include('./parts/_p-card') %>
+                          </div><!-- /.p-card__item -->
+                          <div class="l-cards__item p-card__item">
+                            <%- include('./parts/_p-card') %>
+                          </div><!-- /.p-card__item -->
 
 
                         </div><!-- /.p-cards -->
+
+
+
 
                               <!--共通パーツサンプル（ひろこ）ここまで-->
