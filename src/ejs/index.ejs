@@ -15,12 +15,12 @@
 
                 <!--共通パーツサンプル（ひろこ）-->
                 <!--セクションタイトル日本語 -->
-                <p>セクションタイトル</p>
-                <%- include('./parts/_c-section__title',{text:'制作実績'}) %>
-                  <%- include('./parts/_c-section__title',{text:'ブログ'}) %>
+                <p>セクションタイトル/section-title</p>
+                <%- include('./parts/_c-section-title',{text:'制作実績'}) %>
+                  <%- include('./parts/_c-section-title',{text:'ブログ'}) %>
 
                     <!--お問い合わせセクション-->
-                    <p>お問い合わせセクション</p>
+                    <p>お問い合わせセクション/inquiry</p>
                     <%- include('./common/_inquiry') %>
 
                       <!--日付-->
@@ -28,24 +28,30 @@
                       <%- include('./parts/_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
 
                         <!--カテゴリーのラベル-->
-                        <p>カテゴリーのラベル</p>
+                        <p>カテゴリーのラベル/c-label</p>
                         <%- include('./parts/_c-label',{text:'カテゴリ'}) %>
 
                           <!--カテゴリーのラベル黄色バージョン-->
-                          <p>カテゴリーのラベル（ブログ用・黄色）</p>
-                          <%- include('./parts/_c-label-blog',{text:'カテゴリー'}) %>
+                          <p>カテゴリーのラベル（ブログ用・黄色）/c-label-blog</p>
+                          <%- include('./parts/_c-label-blog',{text:'カテゴリ'}) %>
 
                           <!--カード単体-->
-                          <p>カード単体p-card</p>
+                          <p>カード単体/p-card</p>
                           <div class="p-card__item">
                             <%- include('./parts/_p-card') %>
                           </div><!-- /.p-card__item -->
 
 
                           <!--カード複数-->
-                          <p>カード複数p-cards</p>
+                          <p>カード・横並び3枚/p-cards</p>
                         <div class="l-cards p-cards">
                           <!--カード-->
+                          <div class="l-cards__item p-card__item">
+                            <%- include('./parts/_p-card') %>
+                          </div><!-- /.p-card__item -->
+                          <div class="l-cards__item p-card__item">
+                            <%- include('./parts/_p-card') %>
+                          </div><!-- /.p-card__item -->
                           <div class="l-cards__item p-card__item">
                             <%- include('./parts/_p-card') %>
                           </div><!-- /.p-card__item -->
