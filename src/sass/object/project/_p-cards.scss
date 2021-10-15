@@ -1,0 +1,8 @@
+.p-cards__item{
+    margin: rem(24) rem(24) 0 0;
+	width: calc(33.3333333% - 48px / 3);
+}
+
+.p-cards__item:nth-child(3n) {
+    margin-right: 0;
+}
