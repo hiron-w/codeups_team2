@@ -2,7 +2,7 @@
   display:none;
 
   @include mq("pc"){
-    display: block;
+    display: flex;
   }
 }
 
@@ -11,12 +11,13 @@
   letter-spacing: rem(2);
   line-height:rem(50);
   position: relative;
+}
 
-  &::after{
+.c-pc-nav__items::after{
     position:absolute;
     content:'';
     left:0;
-    bottom:rem(-5);
+    bottom:rem(10);
     width:calc( 100% - #{rem(30)});
     height:rem(1);
     background: $yellow;
@@ -25,8 +26,12 @@
     transition: transform .3s;
   }
 
-  &:hover::after{
+.c-pc-nav__items:hover::after{
       transform: scale(1,1);
-  }
 }
 
+.c-pc-nav__contact{
+  width:rem(170);
+  max-width:100%;
+  height:rem(50);
+}
