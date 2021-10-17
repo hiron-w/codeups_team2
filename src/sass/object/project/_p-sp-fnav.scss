@@ -1,0 +1,14 @@
+.p-sp-fnav{
+  display: block;
+  @include mq(tab){
+    display: none;
+  }
+}
+
+.p-sp-fnav__list{
+}
+
+.p-sp-fnav__list a {
+  padding: rem(4) 0;
+  display: block;
+}

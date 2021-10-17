@@ -1,6 +1,5 @@
 .wp-pagenavi {
 	clear: both;
-	// text-align:center;
 
 }
 .wp-pagenavi a,
@@ -8,9 +7,9 @@
   font-size: rem(16);
   line-height: 1;
   min-width: rem(24); //桁が増えた場合、サイズを大きくするため
-  color:white;
+  color:$white;
   padding: rem(3) rem(6);
-  border: rem(1) solid white;
+  border: rem(1) solid $white;
   display: inline-block;
   box-sizing: border-box;
   letter-spacing: 0.0005em;
@@ -26,11 +25,11 @@
 }
 
 .wp-pagenavi a:hover{
-  background-color: #333;
+  background-color: $gray;
 }
 .wp-pagenavi span.current{
-  background-color: white;
-  color:black;
+  background-color:$white;
+  color:$gray;
 }
 
 .wp-pagenavi a.previouspostslink{
