@@ -1,14 +1,30 @@
 <div class="l-footer p-footer">
-  <br><br><br><br><br><br><br>
-  <br>
-  これはフッターです
-
-  <div style="background-color: black;">
-  <%- include('../parts/_c-pager') %>
-
-  <%- include('../parts/_c-tab') %>
-
-  <br>
-  <br>
- </div>
+    <!--ロゴ-->
+  <div class="p-footer__inner">
+    <div class="p-footer__box">
+      <div class="p-footer__logo">
+        <a href=""><img src="/images/common/logo.svg" alt="ロゴ"></a>
+      </div>
+      <div class="p-footer__nav">
+        <%- include('../parts/_c-pc-nav', {param:'footer'}) %>
+      </div>
+      <div class="p-footer__sp-fnav p-sp-fnav">
+        <!--SPメニュー-->
+        <div class="p-sp-fnav">
+          <ul class="p-sp-fnav__list">
+            <li><a href="#">トップ</a></li>
+            <li><a href="#">お知らせ</a></li>
+            <li><a href="#">事業内容</a></li>
+            <li><a href="#">企業概要</a></li>
+            <li><a href="#">ブログ</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+        
+    </div>
+    <div class="p-footer__copy">
+      <small class="p-footer__copytext">&copy; 2021 CodeUps Inc.</small>
+    </div>
+  </div>
 </div>
