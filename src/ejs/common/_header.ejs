@@ -1,15 +1,15 @@
-<header class="header p-header">
+<header class="header l-header">
 
 
-<div class="p-header-wrap">
+<div class="l-header-wrap">
 <!--ロゴ-->
-<div class="logo p-header__logo"><a href=""><img src="/images/common/logo.svg" alt="ロゴ"></a></div>
+<div class="logo l-header__logo"><a href=""><img src="/images/common/logo.svg" alt="ロゴ"></a></div>
 
-<div class="p-header__item">
+<div class="l-header__item">
   <!--ハンバーガーボタン-->
   <div class="p-sp-openbtn"><span></span><span></span><span></span></div>
   <!--PCメニュー-->
-  <%- include('../parts/_c-pc-nav.ejs') %>
+  <%- include('../parts/_c-pc-nav', {param:'header'}) %>
 </div>
 </div>
 

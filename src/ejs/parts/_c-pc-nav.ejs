@@ -5,5 +5,11 @@
   <a  class="c-pc-nav__items" href="#">制作実績</a>
   <a  class="c-pc-nav__items" href="#">企業概要</a>
   <a  class="c-pc-nav__items" href="#">ブログ</a>
-  <a  class="c-pc-nav__contact" href="#">お問い合わせ</a>
+  <!-- ヘッダーの場合 -->
+  <% if (param === 'header') { %>
+  <div  class="c-pc-nav__contact"><%- include('./_c-btn-white.ejs',{text:'お問い合わせ', link:'#'}) %></div>
+  <!-- その他（フッター）の場合 -->
+  <% } else { %>
+  <a  class="c-pc-nav__items" href="#">お問い合わせ</a>
+<% } %>
 </div>
