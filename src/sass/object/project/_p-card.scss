@@ -15,6 +15,7 @@
       
       .p-card__body {
         padding: rem(10) rem(24) rem(16);
+        background-color: $white;
       }
 
       
@@ -28,11 +29,12 @@
         font-weight: bold;
         line-height: calc ( 35 / 18 );
         letter-spacing: rem(1);
+        color: $gray;
       }
       
       .p-card__text {
         font-size: rem(14);
-        color: #777;
+        color: $gray;
         line-height: calc ( 26 / 14 );
         letter-spacing: rem(1);
 

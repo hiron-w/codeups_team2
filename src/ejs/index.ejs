@@ -13,7 +13,41 @@
               <% } %>
 
 
+<!--共通パーツサンプル（ひろこ）-->
+                <!--セクションタイトル日本語 -->
+                <p>セクションタイトル/c-section-title</p>
+                <%- include('./parts/_c-section-title',{text:'制作実績'}) %>
+                  <%- include('./parts/_c-section-title',{text:'ブログ'}) %>
 
+                    <!--お問い合わせセクション-->
+                    <p>お問い合わせセクション/inquiry</p>
+                    <%- include('./common/_inquiry') %>
+
+                      <!--日付-->
+                      <p>日付</p>
+                      <%- include('./parts/_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
+
+                        <!--カテゴリーのラベル-->
+                        <p>カテゴリーのラベル/c-label</p>
+                        <%- include('./parts/_c-label',{text:'カテゴリ'}) %>
+
+                          <!--カテゴリーのラベル黄色バージョン-->
+                          <p>カテゴリーのラベル（ブログ用・黄色）/c-label-blog</p>
+                          <%- include('./parts/_c-label-blog',{text:'カテゴリ'}) %>
+
+                          <!--カード単体-->
+                          <p>カード単体/p-card</p>
+                            <%- include('./parts/_p-card') %>
+
+                          <!--カード複数・3枚横並び-->
+                          <p>カード複数・3枚横並び/p-cards</p>
+                            <%- include('./parts/_p-cards') %>
+
+
+
+
+
+                              <!--共通パーツサンプル（ひろこ）ここまで-->
      
   </body>
 </html>
