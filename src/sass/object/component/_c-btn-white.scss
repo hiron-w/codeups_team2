@@ -1,0 +1,32 @@
+.c-btn-white {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height:100%;
+  color: $gray;
+  background: #fff;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.c-btn-white:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: $gray;
+  transition: all 0.3s linear;
+}
+.c-btn-white:hover {
+  color: #fff;
+}
+.c-btn-white:hover:before {
+  left: 0;
+}

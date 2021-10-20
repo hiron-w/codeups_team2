@@ -1,0 +1,52 @@
+.p-footer__inner{
+  text-align: center;
+  margin: rem(48) rem(22);
+  @include mq(tab){
+    margin: rem(23) rem(32) rem(16) rem(32);
+  }
+
+}
+
+.p-footer__box{
+  @include mq(tab){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+}
+
+.p-footer__logo{
+  text-align: center;
+  @include mq(tab){
+    width: rem(70);
+  }
+
+}
+.p-footer__logo img{
+    width: rem(70);
+}
+
+.p-footer__sp-fnav {
+  margin-top: rem(4);
+}
+
+.p-footer__copy{
+  margin-top: rem(28);
+  @include mq(pc){
+   margin-top: rem(56);
+  }
+}
+.p-footer__copytext{
+  font-size: rem(15);
+  line-height: calc(35/15);
+  letter-spacing: rem(1.2);
+  color: $white;
+}
+
+.p-footer__nav a:last-child{
+  padding-right: 0;
+}
+
+.p-footer__nav a:last-child::after{
+  width: 100%;
+}

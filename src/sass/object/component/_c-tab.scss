@@ -1,0 +1,24 @@
+.c-tab__item{
+  font-size: rem(16);
+  letter-spacing: 0.002em;
+  padding: rem(3) rem(10);
+  margin-right: rem(30);
+  line-height: 1;
+  text-align: center;
+  color:$white;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  @include mq(tab){
+    margin-right: rem(24);
+  }
+}
+
+.c-tab__item:hover{
+  background-color: $gray;
+}
+
+.c-tab__item.c-tab__item--curent{
+  background-color: $white;
+  color:$gray;
+}
+

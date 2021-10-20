@@ -1,0 +1,30 @@
+.p-header{
+  height:rem(50);
+  position: fixed;
+  z-index: 999;
+  width:100%;
+  background:rgba(117, 106, 106, 0.5);
+  transition: background-color 0.3s;
+}
+
+.p-header__wrap{
+  display: flex;
+  align-items: center;
+  padding:rem(2) rem(22);
+
+  @include mq("pc") {
+    padding:0 0 0 rem(33);
+  }
+}
+
+.p-header__item{
+  margin-left:auto;
+}
+
+.p-header__logo img{
+  width:rem(70);
+
+  @include mq("pc") {
+  width:rem(94);
+  }
+}

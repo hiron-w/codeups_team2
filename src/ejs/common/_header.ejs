@@ -1,0 +1,30 @@
+<header class="l-header p-header">
+
+
+<div class="p-header__wrap">
+<!--ロゴ-->
+<div class="p-header__logo"><a href=""><img src="/images/common/logo.svg" alt="ロゴ"></a></div>
+
+<div class="p-header__item">
+  <!--ハンバーガーボタン-->
+  <div class="p-sp-openbtn"><span></span><span></span><span></span></div>
+  <!--PCメニュー-->
+  <%- include('../parts/_c-pc-nav', {param:'header'}) %>
+</div>
+</div>
+
+
+<!--SPメニュー-->
+<nav class="p-sp-nav">
+  <ul class="p-sp-nav__list">
+   <li><a href="#">トップ</a></li>
+   <li><a href="#">お知らせ</a></li>
+   <li><a href="#">事業内容</a></li>
+   <li><a href="#">制作実績</a></li>
+   <li><a href="#">企業概要</a></li>
+   <li><a href="#">ブログ</a></li>
+   <li><a href="#">お問い合わせ</a></li>
+  </ul>
+</nav>
+
+</header>
