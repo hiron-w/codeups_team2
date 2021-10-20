@@ -1,0 +1,39 @@
+
+//問い合わせセクション//
+
+.p-inquiry{
+    background-color: #3D3D3D;
+}
+
+
+.p-inquiry__title{
+        position: relative;
+
+}
+
+
+.p-inquiry__text{
+    font-size: $font-size-base;
+    letter-spacing: 0.025em;
+    color: #fff;
+    margin-top: rem(20);
+
+    @include mq(tab){
+        margin-top: rem(24);
+        text-align: center;
+        
+    }
+}
+
+.p-inquiry__btn{
+    text-align: center;
+    margin: rem(40) auto 0;
+    width: 100%;
+    max-width: rem(335);
+
+    @include mq(tab){
+        margin-top: rem(60);
+        min-width: rem(360);
+    }
+
+}

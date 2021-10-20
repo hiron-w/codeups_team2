@@ -1,0 +1,45 @@
+//カード//
+      
+      .p-card__img-wrapper {
+        position: relative;
+        padding-top: 66.57%;
+        overflow: hidden;
+      }
+      
+      .p-card__img {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+      }
+      
+      .p-card__body {
+        padding: rem(10) rem(24) rem(16);
+      }
+
+      
+      .p-card__body > *:last-child {
+        margin-bottom: 0;
+      }
+      
+      .p-card__title {
+        margin-bottom: 5px;
+        font-size: rem(18);
+        font-weight: bold;
+        line-height: calc ( 35 / 18 );
+        letter-spacing: rem(1);
+      }
+      
+      .p-card__text {
+        font-size: rem(14);
+        color: #777;
+        line-height: calc ( 26 / 14 );
+        letter-spacing: rem(1);
+
+      }
+      
+      .p-card__meta{
+        margin-top: rem(5);
+        display: flex;
+        justify-content: space-between;
+      }
