@@ -2,7 +2,8 @@
 //問い合わせセクション//
 
 .p-inquiry{
-    background-color: #3D3D3D;
+    background-color: $contact-bg; //お問い合わせの背景色
+    ;
 }
 
 
@@ -15,7 +16,6 @@
 .p-inquiry__text{
     font-size: $font-size-base;
     letter-spacing: 0.025em;
-    color: #fff;
     margin-top: rem(20);
 
     @include mq(tab){

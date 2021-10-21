@@ -6,31 +6,33 @@
   </figure>
 
   <a href="#">
-  <div class="p-card__body">
+    <div class="p-card__body">
 
       <h3 class="p-card__title">
         タイトルが入ります。タイトルが入ります。
       </h3>
       <p class="p-card__text">
-      説明文が入ります。説明文が入ります。説明文が入ります
-    </p>
-    
-    <div class="p-card__meta">
-      <div class="p-card__meta--cat">
-        <%- include('./_c-label-blog',{text:'カテゴリ'}) %>
-          <!-- /.c-label-blog -->
-      </div><!-- /.p-card__meta-cat -->
-      
-      <div class="p-card__mata--date">
-        <%- include('./_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
+        説明文が入ります。説明文が入ります。説明文が入ります
+      </p>
 
-      </div><!-- /.p-card__mata-date -->
-      
-    </div><!-- /.p-card__meta -->
-    
-    
-  </div>
-</a>
+      <div class="p-card__meta">
+        <div class="p-card__meta--cat">
+          <%- include('./_c-label-blog',{text:'カテゴリ'}) %>
+            <!-- /.c-label-blog -->
+        </div><!-- /.p-card__meta-cat -->
+
+        <div class="p-card__mata--date">
+          <%- include('./_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
+            <!-- <time datetime="2021-07-20" class="c-date">2021.07.20</time> -->
+        </div><!-- /.p-card__mata-date -->
+
+
+
+      </div><!-- /.p-card__meta -->
+
+
+    </div>
+  </a>
   <!-- /.p-card__body -->
 </div>
 <!-- /.p-card -->
