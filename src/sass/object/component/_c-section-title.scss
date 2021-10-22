@@ -6,8 +6,6 @@
     text-align: center;
     position: relative;
     letter-spacing: rem(2);
-    background-color: #3D3D3D;
-    // padding: rem(48) 0;
 
     @include mq(tab){
         font-size: rem(30);
