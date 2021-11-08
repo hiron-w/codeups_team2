@@ -15,6 +15,18 @@
       
       .p-card__body {
         padding: rem(10) rem(24) rem(16);
+        background-color: $white;
+        color: $gray;
+        transition:all 0.3s;
+        -webkit-transition:all 0.3s;
+        -moz-transition:all 0.3s;
+        -ms-transition:all 0.3s;
+        -o-transition:all 0.3s;
+}
+
+      .p-card__body:hover {
+        background-color: $gray;
+        color: $white;
       }
 
       
@@ -28,18 +40,29 @@
         font-weight: bold;
         line-height: calc ( 35 / 18 );
         letter-spacing: rem(1);
+
       }
+
       
       .p-card__text {
         font-size: rem(14);
-        color: #777;
         line-height: calc ( 26 / 14 );
         letter-spacing: rem(1);
 
       }
+
       
       .p-card__meta{
         margin-top: rem(5);
         display: flex;
         justify-content: space-between;
+      }
+
+      .p-card__meta:hover{
+        color: $white;
+      }
+
+      .p-card__mata--date:hover{
+        color: $white;
+
       }

@@ -1,14 +1,12 @@
 .l-cards{
-    display: flex;
-    flex-wrap: wrap;
+
+    @include mq(tab){
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: rem(1115);
+        margin: 0 auto;
+    }
 
 }
 
-.l-cards__item{
-    margin: rem(24) rem(24) 0 0;
-	width: calc(33.3333333% - 48px / 3);
-}
-
-.l-cards__item:nth-child(3n) {
-    margin-right: 0;
-}

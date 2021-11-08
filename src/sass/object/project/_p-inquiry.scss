@@ -1,39 +1,55 @@
-
 //問い合わせセクション//
 
-.p-inquiry{
-    background-color: #3D3D3D;
+.p-inquiry {
+    background-color: $contact-bg; //お問い合わせの背景色
 }
 
-
-.p-inquiry__title{
-        position: relative;
-
+.p-inquiry__title {
+    position: relative;
 }
 
+.p-inquiry__title::before {
+    content: "Contact";
+    position: absolute;
+    font-size: rem(50);
+    color: $english-yellow;
+    position: absolute;
+    top: -127%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Noto Serif JP',serif;
+    opacity: 0.27;
+    letter-spacing: 0.1em;
 
-.p-inquiry__text{
+
+    @include mq(tab) {
+        font-size: rem(110);
+        letter-spacing: normal;
+        top: -250%;
+        left: 0;
+        transform: none;
+}
+}
+
+.p-inquiry__text {
     font-size: $font-size-base;
     letter-spacing: 0.025em;
-    color: #fff;
     margin-top: rem(20);
 
-    @include mq(tab){
+    @include mq(tab) {
         margin-top: rem(24);
         text-align: center;
-        
     }
 }
 
-.p-inquiry__btn{
+.p-inquiry__btn {
     text-align: center;
     margin: rem(40) auto 0;
     width: 100%;
     max-width: rem(335);
 
-    @include mq(tab){
+    @include mq(tab) {
         margin-top: rem(60);
         min-width: rem(360);
     }
-
 }
