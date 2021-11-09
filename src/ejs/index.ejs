@@ -5,12 +5,50 @@
   <body>
     <%- include('./common/_header') %>
 
+    <!--MV -->
+    <div class="p-top-mv">
+      <picture>
+        <source srcset="/images/common/top-mv1-pc.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+        <img src="/images/common/top-mv1-sp.jpg" alt="MV画像1">
+      </picture>
+    </div><!-- /.p-top-mv -->
+    
+    
+    <!--news -->
+    <section class="l-top-news p-top-news">
+      <div class="p-top-news__body">
+        <div class="p-top-news__item">
+           <%- include('./parts/_p-news-items',{number:1}) %>
+          </div><!-- /.p-top-news__item -->
+          <div class="p-top-news__btn--pc">
+            <%- include('./parts/_c-btn-white.ejs',{text:'すべて見る', link:'#'}) %>
+          </div><!-- /.p-top-news__btn--pc -->
+          <div class="p-top-news__btn--sp">
+            <%- include('./parts/_c-btn-black.ejs',{text:'すべて見る', link:'#'}) %>
+          </div><!-- /.p-top-news__btn--sp -->
+        </div><!-- /.p-top-news__body -->
+      </section><!-- /.p-top-news -->
+      
+      
+      
+      
+      
+      
+    <!--セクションタイトル日本語 -->
+    <%- include('./parts/_c-section-title',{text:'ブログ'}) %>
+    
+    <!--カード複数・3枚横並び-->
+    <%- include('./parts/_p-cards') %>
+    
+  
+    <!--お問い合わせセクション-->
+    <%- include('./common/_inquiry') %>
+    
+     <!--フッター-->
     <%- include('./common/_footer') %>
 
 
-          <% for (var i=0; i < 4; i++) { %>
-                  <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
-              <% } %>
+
 
 
 <!--共通パーツサンプル（ひろこ）-->
@@ -45,9 +83,52 @@
 
 
 
-
-
                               <!--共通パーツサンプル（ひろこ）ここまで-->
-     
-  </body>
+
+
+ <!--共通パーツサンプル（sassy）-->
+
+           <!--下層ページMV-->
+          <%- include('./parts/_p-sub-mv',{
+            title:'お知らせ',
+            spImage:'/images/common/sub-news-mv-sp.jpg',
+            pcImage:'/images/common/sub-news-mv-pc.jpg'
+          }) %>
+          
+
+          <!--お知らせ一覧  numberの数字を変えて繰り返し調整可能-->
+          <%- include('./parts/_p-news-items',{number:5}) %>
+          
+          
+          <!--パンくずリスト-->
+          <%- include('./parts/_c-breadcrumb',{
+            navigationList: [
+            {
+              path: ' リンク先パス ',
+              label: 'トップ'
+            },
+            {
+              path: ' リンクパス ',
+              label: 'ページ名'
+            }
+            ]
+          }) %>
+          
+          <%# パンくずリストが３つ以上になる時は、
+          {
+            path: ' ',
+            label: ' '
+          },
+          を1つ増やせば対応できます %>
+          
+          
+          <!--パンくずリスト-->
+          <%- include('./parts/_c-page-top') %>
+          
+          
+
+          <!--共通パーツサンプル（sassy）ここまで-->
+
+
+        </body>
 </html>
