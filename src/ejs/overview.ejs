@@ -3,16 +3,16 @@
 <%- include('./common/_head') %>
 
   <body>
-    <section class="p-overview">
-      <%- include('./common/_header') %>
-      <!--下層ページMV-->
-      <%- include('./parts/_p-sub-mv',{
-      title:'企業概要',
-      spImage:'/images/common/sub-overview-mv-sp.jpg',
-      pcImage:'/images/common/sub-overview-mv-pc.jpg'
-      }) %>
-      <div class="p-overview__inner l-inner">
-        <div class="p-overview__breadcrumb">    
+    <%- include('./common/_header') %>
+    <!--下層ページMV-->
+    <%- include('./parts/_p-sub-mv',{
+    title:'企業概要',
+    spImage:'/images/common/sub-overview-mv-sp.jpg',
+    pcImage:'/images/common/sub-overview-mv-pc.jpg'
+    }) %>
+    <section class="p-sub-overview">
+      <div class="p-sub-overview__inner l-inner">
+        <div class="p-sub-overview__breadcrumb">    
           <!--パンくずリスト-->
           <%- include('./parts/_c-breadcrumb',{
             navigationList: [
@@ -29,21 +29,21 @@
         </div>
 
         <!-- 企業概要一覧 -->
-        <div class="p-ovreview__lists">
-          <%- include('./parts/_p-overview-list') %>
+        <div class="p-sub-overview__lists">
+          <%- include('./parts/_p-sub-overview-list') %>
         </div>
 
         <!-- Google Map -->
-        <div class="p-ovreview__map">
+        <div class="p-sub-overview__map">
           <%- include('./parts/_c-map') %>
-        </div>
-
-        <!-- お問い合わせ -->
-        <div class="p-overview__inquiry">
-          <%- include('./common/_inquiry') %>
         </div>
       </div>
     </section>
+
+    <!-- お問い合わせ -->
+    <div class="p-sub-overview__inquiry">
+      <%- include('./common/_inquiry') %>
+    </div>
     <%- include('./common/_footer') %>
   </body>
 </html>

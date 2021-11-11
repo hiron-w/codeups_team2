@@ -35,12 +35,12 @@ const overviewlists=[
 },
 ]
 %>
-<div class="p-overview-list">
-  <dl class= "p-overview-list__items">
+<div class="p-sub-overview-list">
+  <dl class= "p-sub-overview-list__items">
     <% for (var overviewlist of overviewlists) { %>
-      <div class="p-overview-list__item">
-        <dt class="p-overview-list__title"><%= overviewlist.title %></dt>
-        <dd class="p-overview-list__text"><%= overviewlist.text %></dd>
+      <div class="p-sub-overview-list__item">
+        <dt class="p-sub-overview-list__title"><%= overviewlist.title %></dt>
+        <dd class="p-sub-overview-list__text"><%= overviewlist.text %></dd>
       </div>
     <% } %>
   </dl>

@@ -1,4 +1,4 @@
-.p-overview-list__item{
+.p-sub-overview-list__item{
   display: flex;
   font-size: rem(13);
   border-bottom: 1px solid $white;
@@ -9,7 +9,7 @@
   }
 }
 
-.p-overview-list__title{
+.p-sub-overview-list__title{
   max-width: rem(100);
   padding-left: rem(5);
   width: 100%;
@@ -18,7 +18,7 @@
   }
 }
 
-.p-overview-list__text{
+.p-sub-overview-list__text{
   margin-left: rem(14);
   max-width: 100% - #{rem(100)};
   width: 100%;
