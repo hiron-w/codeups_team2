@@ -7,9 +7,13 @@
 }
 
 .p-sub-content__text{
-    text-align: center;
+    text-align: left;
     margin-top: rem(20);
     line-height: (35 / 16);
+
+    @include mq(tab){
+        text-align: center;
+    }
 }
 
 .p-sub-content__detail{
