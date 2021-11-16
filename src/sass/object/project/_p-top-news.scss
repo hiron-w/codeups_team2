@@ -17,8 +17,8 @@
   @include mq(tab) {
     display: flex;
     max-width: rem(1042);
-   
     
+
   }
 }
 
@@ -31,7 +31,7 @@
     display: block;
     width: rem(134);
     height: rem(30);
-    margin-left: rem(47);
+    margin-left: auto;
     font-size: rem(16);
   
   }

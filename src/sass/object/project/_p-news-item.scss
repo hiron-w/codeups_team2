@@ -10,6 +10,12 @@
   }
 }
 
+.p-news-item:hover {
+  .p-news-item__body {
+    color: $english-yellow;
+  }
+}
+
 
 
 .p-news-item__meta{
@@ -45,6 +51,7 @@
 
 .p-news-item__body{
   margin-top: rem(16);
+  transition: .3s;
 
   @include mq(tab) {
     margin-top: rem(0);
