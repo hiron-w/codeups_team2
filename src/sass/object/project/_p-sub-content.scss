@@ -1,0 +1,39 @@
+
+.p-sub-content__title{
+    font-size: rem(25);
+    text-align: center;
+    margin-top: rem(60);
+
+}
+
+.p-sub-content__text{
+    text-align: left;
+    margin-top: rem(20);
+    line-height: (35 / 16);
+
+    @include mq(tab){
+        text-align: center;
+    }
+}
+
+.p-sub-content__detail{
+    margin-top: rem(80);
+}
+
+
+.p-sub-content__items{
+    margin-top: rem(45);
+}
+
+.p-sub-content__item{
+    margin-top: rem(104);
+}
+
+.p-sub-content__inquiry{
+    margin-top: rem(120);
+
+    @include mq(tab){
+        margin-top: rem(150);
+
+    }
+}
