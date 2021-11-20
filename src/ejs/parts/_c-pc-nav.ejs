@@ -7,9 +7,9 @@
   <a  class="c-pc-nav__items" href="blog.html">ブログ</a>
   <!-- ヘッダーの場合 -->
   <% if (param === 'header') { %>
-  <a  class="c-pc-nav__contact" href="contact.html">お問い合わせ</a>
-  <!-- その他（フッター）の場合 -->
-  <% } else { %>
-  <a  class="c-pc-nav__items" href="contact.html">お問い合わせ</a>
+    <div  class="c-pc-nav__contact"><%- include('./_c-btn-white.ejs',{text:'お問い合わせ', link:'#'}) %></div>
+    <!-- その他（フッター）の場合 -->
+    <% } else { %>
+    <a  class="c-pc-nav__items" href="#">お問い合わせ</a>
   <% } %>
 </div>
