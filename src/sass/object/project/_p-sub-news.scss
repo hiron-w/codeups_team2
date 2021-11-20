@@ -1,0 +1,38 @@
+.p-sub-news__breadcrumb{
+  margin-top:rem(16);
+  margin-left: rem(20);
+
+  @include mq(tab){
+    margin-left:rem(90);
+  }
+}
+
+.p-sub-news__news-items{
+  padding:0 $padding-sp;
+  margin-top: rem(85);
+  
+  @include mq(tab){
+    display:flex;
+    justify-content: center;
+    margin-top:rem(69);
+    padding: 0;
+    }
+
+}
+
+.p-sub-news__pager{
+  margin-top:rem(80);
+  text-align: center;
+
+  @include mq(tab){
+    margin-top:rem(104);
+    }
+}
+
+.p-sub-news__inquiry{
+  margin-top:rem(120);
+
+  @include mq(tab){
+  margin-top:rem(150);
+  }
+}
