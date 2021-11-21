@@ -14,32 +14,36 @@
                         label: 'ブログ記事一覧' } ] }) %>
                 </div>
 
-
-                <!--タブ-->
-                <div class="l-inner">
-                     <%- include('./parts/_c-tab') %>
-                </div>
-
-
                 <!--ブログ一覧-->
-                <section class="blog">
-                    <%- include('./parts/_p-cards') %>
+                <section class="p-sub-blog l-inner">
+
+                    <!--タブ-->
+                    <div class="p-sub-blog__tab">
+                        <%- include('./parts/_c-tab') %>
+                    </div>
+                    　
+                    <!--カード一覧-->
+                    <div class="p-sub-blog__cards">
+                        <%- include('./parts/_p-cards') %>
+                    </div>
+
+                    <!--ページネーション-->
+                    <div class="p-sub-blog__pager">
+                        <%- include('./parts/_c-pager') %>
+                    </div>
+
                 </section>
 
-                <!--ページネーション-->
-                <div class="l-inner">
-                <%- include('./parts/_c-pager') %>
-             </div>
- 
-                
+
+
                 <!-- お問い合わせ -->
-                 <section class="p-sub-content__inquiry">
+                <section class="p-sub-content__inquiry">
                     <%- include('./common/_inquiry') %>
-                 </section>
+                </section>
 
 
 
-                 <%- include('./common/_footer') %>
-   </body>
-                
+                <%- include('./common/_footer') %>
+    </body>
+
 </html>
