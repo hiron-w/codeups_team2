@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+  <body>
+    <%- include('./common/_header') %>
+    <!--下層ページMV-->
+    <%- include('./parts/_p-sub-mv',{
+    title:'お知らせ',
+    spImage:'/images/common/sub-news-mv-sp.jpg',
+    pcImage:'/images/common/sub-news-mv-pc.jpg'
+    }) %>
+
+    <section class="p-sub-news">
+        <div class="p-sub-news__breadcrumb">
+          <!--パンくずリスト-->
+          <%- include('./parts/_c-breadcrumb',{
+            navigationList: [
+            {
+              path: '/',
+              label: 'トップ'
+            },
+            {
+              path: '',
+              label: 'お知らせ'
+            }
+            ]
+          }) %>
+        </div>
+
+        <div class="p-sub-news__news-items">
+          <%- include('./parts/_p-news-items',{number:10}) %>
+        </div>
+
+
+        <div class="p-sub-news__pager">
+          <%- include('./parts/_c-pager.ejs') %>
+        </div>
+      </section>
+
+    <!-- お問い合わせ -->
+      <div class="p-sub-news__inquiry">
+      <%- include('./common/_inquiry') %>
+    </div>
+
+    <!-- フッター -->
+    <%- include('./common/_footer') %>
+    
+  </body>
+</html>
