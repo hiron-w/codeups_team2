@@ -1,0 +1,23 @@
+.p-sub-overview__breadcrumb{
+  margin-top:rem(16)
+}
+
+.p-sub-overview__inquiry{
+  margin-top: rem(120);
+  // width: 100vw;
+  // margin: 0 calc(50% - 50vw);
+  @include mq(tab){
+    margin-top: rem(150);
+  }
+}
+
+.p-sub-overview__lists{
+  margin-top: rem(85);
+  @include mq(tab){
+    margin-top: rem(115);
+  }
+}
+
+.p-sub-overview__map{
+  margin-top: rem(120);
+}

@@ -1,0 +1,28 @@
+.c-map{
+  position: relative;
+  width: 100vw;
+	margin: 0 calc(50% - 50vw);
+  overflow: hidden;
+  @include mq(tab){
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.c-map::after{
+  content: "";
+  display: block;
+  padding-top: 80%;
+  @include mq(tab){
+    padding-top: 33.363636%;
+  }
+}
+
+.c-map iframe{
+  position: absolute;
+  height: 200%;//100%を145%などとすることで+-のボタンを消すことができる
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

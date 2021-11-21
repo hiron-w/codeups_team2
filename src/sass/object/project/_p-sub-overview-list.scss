@@ -1,0 +1,28 @@
+.p-sub-overview-list__item{
+  display: flex;
+  font-size: rem(13);
+  border-bottom: 1px solid $white;
+  padding: rem(14) 0 rem(19) rem(5);
+  @include mq(tab){
+    font-size: rem(16);
+    padding: rem(34) rem(5) rem(28) rem(5);
+  }
+}
+
+.p-sub-overview-list__title{
+  max-width: rem(100);
+  padding-left: rem(5);
+  width: 100%;
+  @include mq(tab){
+    max-width: rem(143);
+  }
+}
+
+.p-sub-overview-list__text{
+  margin-left: rem(14);
+  max-width: 100% - #{rem(100)};
+  width: 100%;
+  @include mq(tab){
+    max-width: 100% - #{rem(143)};
+  }
+}
