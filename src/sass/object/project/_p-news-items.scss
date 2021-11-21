@@ -1,0 +1,7 @@
+.p-news-items__item + .p-news-items__item {
+  margin-top: rem(32);
+
+  @include mq(tab) {
+    margin-top: rem(33);
+  }
+}

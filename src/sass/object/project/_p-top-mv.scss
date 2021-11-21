@@ -1,0 +1,24 @@
+.p-top-mv {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+ 
+ }
+ 
+ .p-top-mv::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba($color: $background, $alpha:0.3);
+  z-index: 100;
+ }
+ 
+ .p-top-mv img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }

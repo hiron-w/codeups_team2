@@ -1,0 +1,14 @@
+<div class="p-news-items">
+  <% for (var i=0; i < number; i++) { %>
+  <div class="p-news-items__item">
+    <%- include('./_p-news-item',{
+      datetime:2020-07-20,
+      time:'2020.07.20',
+      category:'カテゴリ',
+      title:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。',
+    
+    }) %>
+  </div><!-- /.p-news-items__item -->
+    <% } %>
+
+</div><!-- /.p-news-items -->
