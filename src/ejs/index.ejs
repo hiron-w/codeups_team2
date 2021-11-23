@@ -3,46 +3,115 @@
 <%- include('./common/_head') %>
 
   <body>
+    <!-- header -->
     <%- include('./common/_header') %>
 
-    <!--MV -->
+    <!-- MV -->
     <div class="p-top-mv">
-      <picture>
-        <source srcset="/images/common/top-mv1-pc.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
-        <img src="/images/common/top-mv1-sp.jpg" alt="MV画像1">
-      </picture>
+      <div class="swiper js-top-mv-slider">
+        <div class="swiper-wrapper">
+          <div class="p-top-mv__img swiper-slide">
+            <picture>
+              <source srcset="/images/common/top-mv1-pc.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+              <img src="/images/common/top-mv1-sp.jpg" alt="MV画像1">
+            </picture>
+          </div>
+          <div class="p-top-mv__img swiper-slide">
+            <picture>
+              <source srcset="/images/common/top-mv2-pc.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+              <img src="/images/common/top-mv2-sp.jpg" alt="MV画像2">
+            </picture>
+          </div>
+          <div class="p-top-mv__img swiper-slide">
+            <picture>
+              <source srcset="/images/common/top-mv3-pc.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+              <img src="/images/common/top-mv3-sp.jpg" alt="MV画像3">
+            </picture>
+          </div>  
+        </div>
+      </div>
+
+       <div class="p-top-mv__title-block">
+         <h2 class="p-top-mv__title">メインタイトルが入ります</h2><!-- /.p-top-mv__title -->
+         <h3 class="p-top-mv__sub-title">サブタイトルが入ります</h3><!-- /.p-top-mv__sub-title -->
+       </div><!-- /.p-top-mv__title-block -->
     </div><!-- /.p-top-mv -->
     
+
     
-    <!--news -->
+    <!-- news -->
     <section class="l-top-news p-top-news">
       <div class="p-top-news__body">
         <div class="p-top-news__item">
-           <%- include('./parts/_p-news-items',{number:1}) %>
-          </div><!-- /.p-top-news__item -->
-          <div class="p-top-news__btn--pc">
-            <%- include('./parts/_c-btn-white.ejs',{text:'すべて見る', link:'#'}) %>
-          </div><!-- /.p-top-news__btn--pc -->
-          <div class="p-top-news__btn--sp">
-            <%- include('./parts/_c-btn-black.ejs',{text:'すべて見る', link:'#'}) %>
-          </div><!-- /.p-top-news__btn--sp -->
-        </div><!-- /.p-top-news__body -->
-      </section><!-- /.p-top-news -->
-      
-      
-      
-      
-      
-      
-    <!--セクションタイトル日本語 -->
-    <%- include('./parts/_c-section-title',{text:'ブログ'}) %>
+          <%- include('./parts/_p-news-items',{number:1}) %>
+        </div><!-- /.p-top-news__item -->
+        <div class="p-top-news__btn--pc">
+          <%- include('./parts/_c-btn-white.ejs',{text:'すべて見る', link:'#'}) %>
+        </div><!-- /.p-top-news__btn--pc -->
+        <div class="p-top-news__btn--sp">
+          <%- include('./parts/_c-btn-black.ejs',{text:'すべて見る', link:'#'}) %>
+        </div><!-- /.p-top-news__btn--sp -->
+      </div><!-- /.p-top-news__body -->
+    </section><!-- /.p-top-news -->
     
-    <!--カード複数・3枚横並び-->
-    <%- include('./parts/_p-cards') %>
+    
+    <!-- content -->
+      <section class="l-top-content p-top-content">
+        <h2 class="p-top-content__title">
+          <%- include('./parts/_c-section-title',{text:'事業内容'}) %>
+        </h2><!-- /.p-top-content__title -->
+        <div class="p-top-content__body">
+          <%- include('./parts/_p-top-content-items') %>
+       </div><!-- /.p-top-content__body -->
+      </section><!-- /.l-top-content p-top-content -->
+        
+     
+     <!-- works -->
+     <section class="l-top-works p-top-works">
+         <h2 class="p-top-works__title">
+           <%- include('./parts/_c-section-title',{text:'制作実績'})%>
+        </h2><!-- /.p-top-works__title -->
+        <div class="p-top-works__body">
+          <%- include('./parts/_p-top-mediaText') %>
+        </div><!-- /.p-top-works__body -->
+     </section><!-- /.l-top-works p-top-works -->
+     
+     
+     
+     <!-- overview -->
+     <section class="l-top-overview p-top-overview">
+       <h2 class="p-top-overview__title">
+         <%- include('./parts/_c-section-title',{text:'企業概要'}) %>
+       </h2><!-- /.p-top-overview__tile -->
+       <div class="p-top-overview__body">
+         <%- include('./parts/_p-top-mediaText--reverse') %>
+       </div><!-- /.p-top-overview__body -->
+     </section><!-- /.l-top-overview p-top-overview -->
+     
+     
+     
+     
+     <!-- blog -->
+     <section class="l-top-blog p-top-blog">
+       <div class="l-inner">
+         <h2 class="p-top-blog__title">
+           <%- include('./parts/_c-section-title',{text:'ブログ'}) %>
+         </h2><!-- /.p-top-blog__title -->
+         <div class="p-top-blog__body">
+           <%- include('./parts/_p-cards') %>
+         </div><!-- /.p-top-blog__body -->
+         <div class="p-top-blog__btn">
+          <%- include('./parts/_c-btn-black.ejs',{text:'詳しく見る', link:'#'}) %>
+         </div><!-- /.p-top-blog__btn -->
+       </div><!-- /.l-inner -->
+     </section><!-- /.l-top-blog p-top-blog -->
+    
     
   
-    <!--お問い合わせセクション-->
-    <%- include('./common/_inquiry') %>
+    <!-- contact-->
+     <section class="l-top-contact">
+       <%- include('./common/_inquiry') %>
+     </section><!-- /.l-top-contact -->
     
      <!--フッター-->
     <%- include('./common/_footer') %>

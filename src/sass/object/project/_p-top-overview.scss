@@ -1,0 +1,55 @@
+.p-top-overview{
+ position: relative;
+}
+
+.p-top-overview::before {
+
+  @include mq(tab) {
+    
+    content: "";
+    display: block;
+    width: rem(1);
+    height: calc(1712 / 1280 * 100vw);
+    background: $english-yellow;
+    position: absolute;
+    top: -63%;
+    left: 46%;
+    transform: rotate(45deg);
+    z-index: -1;
+    
+  }
+  }
+
+.p-top-overview__title {
+  font-weight: 400;
+  position: relative;
+
+}
+
+.p-top-overview__title::before {
+  content: "Overview";
+    position: absolute;
+    font-size: rem(50);
+    color: $english-yellow;
+    position: absolute;
+    top: -160%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Noto Serif JP',serif;
+    opacity: 0.27;
+    letter-spacing: 0.1em;
+
+
+    @include mq(tab) {
+        font-size: rem(110);
+        letter-spacing: normal;
+        top: -176%;
+        left: calc(50% - #{rem(542)});
+        transform: none;
+}
+}
+
+
+.p-top-overview__body {
+  margin-top: rem(40);
+}

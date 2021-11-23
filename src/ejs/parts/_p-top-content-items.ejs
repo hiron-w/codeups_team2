@@ -1,0 +1,34 @@
+<div class="p-top-content-items">
+  <%
+  const topContents=[
+  {
+    title:"企業理念ページへ" ,
+    image:"/images/common/sub-content-mv-sp.jpg"
+  },
+  {
+    title:"理念1へ" ,
+    image:"/images/common/content-Philosophy1.jpg"  
+  },
+  {
+    title:"理念2へ" ,
+    image:"/images/common/content-Philosophy2.jpg"
+  },
+  {
+    title:"理念3へ" ,
+    image:"/images/common/content-Philosophy3.jpg"
+  },
+  ]
+  %>
+  <% for (var topContent of topContents) { %>
+    <div class="p-top-content-items__item">
+      <a href="">
+        <div class="p-top-content-items__img">
+          <img src="<%= topContent.image %>" alt="<%= topContent.title %>">
+        </div><!-- /.p-top-content-items__img -->
+        <h3 class="p-top-content-items__title"><%= topContent.title %></h3><!-- /.p-top-content-items__title -->
+      </a>
+    </div><!-- /.p-top-content-item -->
+    <% } %>
+    
+  </div><!-- /.p-top-content-items -->
+  
