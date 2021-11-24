@@ -1,41 +1,38 @@
-.p-404__inner{
+.p-sub-thanks__inner{
   text-align: center;
   letter-spacing: rem(2);
   font-weight: normal;
-}
-
-.p-404__title{
-  padding-top: rem(130);  //headerのTop指定がないため、marginではなくpaddingとした。
-  font-size: rem(40);
-  color: $yellow;
-  opacity: 0.3;
-  font-weight: normal;
-  @include mq(tab){
-    font-size: rem(60);
-    padding-top: rem(200);  //headerのTop指定がないため、marginではなくpaddingとした。
-  }
-}
-
-.p-404__text{
-  margin-top: rem(80);
   font-size: rem(20);
+  font-weight: normal;
   @include mq(tab){
     font-size: rem(30);
   }
 }
 
-.p-404__footer{
-  margin-top: rem(120);
+.p-sub-thanks__title{
+  padding-top: rem(130);  //headerのTop指定がないため、marginではなくpaddingとした。
+  @include mq(tab){
+    padding-top: rem(200);  //headerのTop指定がないため、marginではなくpaddingとした。
+  }
 }
 
-.p-404__btn{
-  display: none;
-  @include mq(tab){
+.p-sub-thanks__text{
+  margin-top: rem(80);
+}
+
+.p-sub-thanks__btn{
+  font-size: rem(20);
+  margin: rem(80) auto 0;
+  width: rem(360);
+  max-width: 100%;
+  padding: rem(10);
+@include mq(tab){
     font-size: rem(16);
-    display: block;
-    margin: rem(80) auto 0;
-    width: rem(360);
-    max-width: 100%;
-    padding: rem(10);
+  }
+}
+.p-sub-thanks__footer{
+  margin-top: rem(120);
+  @include mq(tab){
+    margin-top: rem(150);
   }
 }

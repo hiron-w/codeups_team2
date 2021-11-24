@@ -1,0 +1,34 @@
+.p-sub-contact__lists{
+    margin-top: rem(30);
+    @include mq(tab){
+      margin-top: rem(62);
+    }
+}
+
+.p-sub-contact__breadcrumb{
+  margin-top: rem(16);
+}
+
+.p-sub-contact__btn {
+  width: rem(335);
+  margin: rem(48) auto 0;
+}
+
+.p-sub-contact__btn input[type="submit"]{
+  padding: rem(9);
+  letter-spacing: rem(2);
+  font-size: rem(20);
+  line-height: 1.5;
+  box-sizing: border-box;
+  width: inherit;
+  height: inherit;
+}
+
+.p-sub-contact__btn input[type="submit"]:hover {
+  background:  transparent;
+  border-color:  transparent;
+}
+
+.p-sub-contact__footer{
+  margin-bottom: rem(130);
+}
