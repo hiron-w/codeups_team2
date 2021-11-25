@@ -14,11 +14,80 @@
   top: 0;
   left: 0;
   background: rgba($color: $background, $alpha:0.3);
-  z-index: 100;
+  z-index: 2;
  }
  
+  .p-top-mv__img {
+    overflow: hidden;
+    height: 100vh;
+
+  }
+        
+  //Prevスライド
+  .p-top-mv__img.swiper-slide-prev,
+  //Activeスライド
+  .p-top-mv__img.swiper-slide-active,
+  //ループ時に複製される正面のスライド
+  .p-top-mv.swiper-slide-duplicate-active {
+
+      img {
+          animation-name: zoom;
+          animation-duration: 6s;
+          animation-fill-mode: forwards;
+      }
+  }
+
+@keyframes zoom {
+  from {
+      transform: scale(1);
+  }
+
+  to {
+      transform: scale(1.5);
+  }
+}
+
+
  .p-top-mv img {
    width: 100%;
    height: 100%;
    object-fit: cover;
  }
+
+.p-top-mv__title-block {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  
+}
+
+.p-top-mv__title {
+ font-size: rem(28);
+ letter-spacing: 0.0179em;
+ line-height: 1;
+ font-weight: 700;
+
+ @include mq(tab) {
+   font-size: rem(50);
+   letter-spacing: 0.01em;
+ }
+
+
+}
+
+.p-top-mv__sub-title {
+ margin-top: rem(24);
+ font-size: rem(20);
+ letter-spacing: 0.025em;
+ line-height: 1;
+ font-weight: 700;
+
+ @include mq(tab) {
+   font-size: rem(25);
+   letter-spacing: 0.02em;
+ }
+
+}

@@ -1,0 +1,37 @@
+.p-top-works {
+
+}
+
+.p-top-works__title {
+  font-weight: 400;
+  position: relative;
+
+}
+
+.p-top-works__title::before {
+  content: "Works";
+    position: absolute;
+    font-size: rem(50);
+    color: $english-yellow;
+    position: absolute;
+    top: -160%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Noto Serif JP',serif;
+    opacity: 0.27;
+    letter-spacing: 0.1em;
+
+
+    @include mq(tab) {
+        font-size: rem(110);
+        letter-spacing: normal;
+        top: -176%;
+        left: calc(50% + #{rem(203)});
+        transform: none;
+}
+}
+
+.p-top-works__body {
+  margin-top: rem(40);
+}
+
