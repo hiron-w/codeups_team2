@@ -11,7 +11,11 @@
 
 .p-sub-contact__btn {
   width: rem(335);
+  max-width: 100%;
   margin: rem(48) auto 0;
+  @include mq(tab){
+    width: rem(360);
+  }
 }
 
 .p-sub-contact__btn input[type="submit"]{
@@ -30,5 +34,5 @@
 }
 
 .p-sub-contact__footer{
-  margin-bottom: rem(130);
+  margin-top: rem(130);
 }

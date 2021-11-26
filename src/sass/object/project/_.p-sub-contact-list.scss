@@ -1,6 +1,6 @@
 .p-sub-contact-list{
   @include mq(tab){
-    width: rem(852);
+    width: rem(868);
     max-width: 100%;
     margin: 0 auto;
   }
@@ -23,7 +23,7 @@
 .p-sub-contact-list__item{
   @include mq(tab){
     display: flex;
-    padding-right: rem(132);
+    padding-right: rem(140);
   }
 }
 
@@ -35,7 +35,7 @@
   font-size: rem(14);
   letter-spacing: rem(0.7);
   @include mq(tab){
-    width: rem(132);
+    width: rem(140);
     max-width: 100%;
     text-align: right;
     padding-top: rem(10);
