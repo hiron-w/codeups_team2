@@ -66,3 +66,25 @@
         color: $white;
 
       }
+
+//ブログカードのオレンジnewマーク
+
+     .p-cards__item:first-child:before {
+        align-items: center;
+        background: #FFBA6A;
+        border-radius: 50%;
+        color: #333;
+        content: "New";
+        display: flex;
+        font-family: 'Noto Serif JP',serif;
+        font-size: 1rem;
+        height: 3.75rem;
+        justify-content: center;
+        left: 0;
+        letter-spacing: 0.125em;
+        position: absolute;
+        top: 0;
+        transform: translate(-30%, -30%);
+        width: 3.75rem;
+        z-index: 2;
+    }
