@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+  <body>
+    <%- include('./common/_header') %>
+    <!--下層ページMV-->
+    <%- include('./parts/_p-sub-mv',{
+    title:'制作実績',
+    spImage:'/images/common/sub-works-mv-sp.jpg',
+    pcImage:'/images/common/sub-works-mv-pc.jpg'
+    }) %>
+
+    <section class="p-sub-works">
+        <div class="p-sub-works__breadcrumb">
+          <!--パンくずリスト-->
+          <%- include('./parts/_c-breadcrumb',{
+            navigationList: [
+            {
+              path: '/',
+              label: 'トップ'
+            },
+            {
+              path: '',
+              label: '制作実績'
+            }
+            ]
+          }) %>
+        </div>
+
+
+        <div class="p-sub-works__items">
+          <% var worksImages = ['/images/common/sub-works01.jpg', '/images/common/sub-works02.jpg', '/images/common/sub-works03.jpg',
+          '/images/common/sub-works04.jpg', '/images/common/sub-works05.jpg', '/images/common/sub-works06.jpg']; %>
+
+          <% for (var i=0; i < 6; i++) { %>
+          <div class="p-sub-works__item">
+            <div class="p-sub-works-item__img">
+              <img src="<%= worksImages[i] %>" alt="制作実績画像">
+            </div>
+            <div class="p-sub-works-item__title">
+            CodeUps株式会社
+            </div>
+          </div>
+          <% } %>
+        </div>
+
+        <div class="p-sub-works__pager">
+          <%- include('./parts/_c-pager.ejs') %>
+        </div>
+      </section>
+
+    <!-- お問い合わせ -->
+      <div class="p-sub-works__inquiry">
+      <%- include('./common/_inquiry') %>
+      </div>
+
+    <!-- ページトップボタン -->
+    <%- include('./parts/_c-page-top') %>
+
+    <!-- フッター -->
+    <%- include('./common/_footer') %>
+    
+  </body>
+</html>

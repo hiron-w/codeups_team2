@@ -1,0 +1,50 @@
+.p-sub-works__breadcrumb{
+  margin-top:rem(16);
+  margin-left: rem(20);
+
+  @include mq(tab){
+    margin-left:rem(90);
+  }
+}
+
+.p-sub-works__items{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: rem(48) 0;
+  margin-top: rem(17);
+
+  @include mq(tab){
+  max-width:$l-inner;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: rem(114) rem(48);
+  margin: rem(40) auto 0 auto;
+  }
+}
+
+
+.p-sub-works-item__title{
+  text-align: center;
+  margin-top: rem(24);
+
+  @include mq(tab){
+  margin-top: rem(12);
+  }
+}
+
+.p-sub-works__pager{
+  margin-top:rem(80);
+  text-align: center;
+
+  @include mq(tab){
+    margin-top:rem(104);
+    }
+}
+
+.p-sub-works__inquiry{
+  margin-top:rem(120);
+
+  @include mq(tab){
+  margin-top:rem(150);
+  }
+}
