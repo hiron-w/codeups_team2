@@ -1,11 +1,15 @@
 .p-sub-works__breadcrumb{
   margin-top:rem(16);
-  margin-left: rem(20);
+}
+
+.p-sub-works__c-tab{
+  margin-top:rem(85);
 
   @include mq(tab){
-    margin-left:rem(90);
+    margin-top:rem(115);
   }
 }
+
 
 .p-sub-works__items{
   display:grid;
@@ -22,10 +26,23 @@
   }
 }
 
+.p-sub-works__item{
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+
+  @include mq(tab){
+      margin: 0;
+      width: 100%;
+  }
+}
 
 .p-sub-works-item__title{
   text-align: center;
   margin-top: rem(24);
+  font-size: rem(20);
+  font-weight:500;
+  line-height: rem(35);
+  letter-spacing:rem(2);
 
   @include mq(tab){
   margin-top: rem(12);

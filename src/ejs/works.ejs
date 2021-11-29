@@ -12,6 +12,7 @@
     }) %>
 
     <section class="p-sub-works">
+      <div class="l-inner">
         <div class="p-sub-works__breadcrumb">
           <!--パンくずリスト-->
           <%- include('./parts/_c-breadcrumb',{
@@ -28,6 +29,10 @@
           }) %>
         </div>
 
+        <div class="p-sub-works__c-tab">
+          <%- include('./parts/_c-tab.ejs') %>
+        </div>
+      
 
         <div class="p-sub-works__items">
           <% var worksImages = ['/images/common/sub-works01.jpg', '/images/common/sub-works02.jpg', '/images/common/sub-works03.jpg',
@@ -48,6 +53,7 @@
         <div class="p-sub-works__pager">
           <%- include('./parts/_c-pager.ejs') %>
         </div>
+      </div>
       </section>
 
     <!-- お問い合わせ -->
