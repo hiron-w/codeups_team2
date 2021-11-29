@@ -1,0 +1,52 @@
+.p-sub-contact-list{
+  @include mq(tab){
+    width: rem(868);
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.p-sub-contact-list__message{
+  width: rem(540);
+  max-width: 100%;
+  min-height: rem(23);
+  margin: 0 auto;
+}
+
+.p-sub-contact-list__items{
+  margin-top: rem(32);
+  @include mq(tab){
+    margin-top: rem(30);
+  }
+}
+
+.p-sub-contact-list__item{
+  @include mq(tab){
+    display: flex;
+    padding-right: rem(140);
+  }
+}
+
+.p-sub-contact-list__item:not(:first-child){
+  margin-top: rem(32);
+}
+
+.p-sub-contact-list__title{
+  font-size: rem(14);
+  letter-spacing: rem(0.7);
+  @include mq(tab){
+    width: rem(140);
+    max-width: 100%;
+    text-align: right;
+    padding-top: rem(10);
+  }
+}
+
+.p-sub-contact-list__text{
+  margin-top: rem(12);
+  @include mq(tab){
+    margin-top: 0;
+    margin-left: rem(24);
+  }
+}
+

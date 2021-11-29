@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+  <body>
+    <%- include('./common/_header') %>
+    <!--下層ページMV-->
+    <%- include('./parts/_p-sub-mv',{
+    title:'お問い合わせ',
+    spImage:'/images/common/sub-contact-mv-sp.jpg',
+    pcImage:'/images/common/sub-contact-mv-pc.jpg'
+    }) %>
+    <section class="p-sub-contact">
+      <div class="p-sub-contact__inner l-inner">
+        <div class="p-sub-contact__breadcrumb">    
+          <!--パンくずリスト-->
+          <%- include('./parts/_c-breadcrumb',{
+            navigationList: [
+            {
+              path: '/',
+              label: 'トップ'
+            },
+            {
+              path: '',
+              label: 'お問い合わせ'
+            }
+            ]
+          }) %>
+        </div>
+        <!-- お問い合わせ内容 -->
+        <div class="p-sub-contact__lists">
+          <%- include('./parts/_p-sub-contact') %>
+        </div>
+      </div>
+
+    </section>
+
+    <!--ページトップボタン-->
+    <%- include('./parts/_c-page-top') %>
+
+    <div class="p-sub-contact__footer">
+      <%- include('./common/_footer') %>
+    </div>
+  </body>
+</html>

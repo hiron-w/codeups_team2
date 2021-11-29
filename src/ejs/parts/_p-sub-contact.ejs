@@ -1,0 +1,89 @@
+<!-- 問い合わせ項目 -->
+<!-- Contact Form7を使用すること前提
+  type : 項目タイプ：text,textareaから選択
+  name : Contact Form7の項目名
+  title: 項目名タイトルを指定
+  text : プレースホルダーの内容を指定
+-->
+<%
+const contactlists=[
+{
+  type:"text",
+  name:"your-company",
+  title:"※会社名・団体名" ,
+  text:"テキストが入ります。"
+},
+{
+  type:"text",
+  name:"your-department",
+  title:"※部署名" ,
+  text:"テキストが入ります。"
+},
+{
+  type:"text",
+  name:"your-name",
+  title:"※お名前" ,
+  text:"テキストが入ります。"
+},
+{
+  type:"text",
+  name:"your-kana",
+  title:"※ふりがな" ,
+  text:"テキストが入ります。"
+},
+{
+  type:"email",
+  name:"your-email",
+  title:"※メールアドレス" ,
+  text:"テキストが入ります。"
+},
+{
+  type:"textarea",
+  name:"your-message",
+  title:"※お問い合わせ内容" ,
+  text:"テキストが入ります。"
+},
+]
+%>
+
+<!--
+  span,input（text,email）,textareaにはContact Form7で付与されるはずのクラス名を設定しています
+  上記以外の場合、else ifでケースわけが必要です。
+  また、エラーの場合：class= "wpcf7-not-valid"が付与される
+ -->
+<div class="p-sub-contact-list">
+  <div class="p-sub-contact-list__message">
+    <!-- ここにContact Form7の　[response] 　を挿入-->
+    <div class="wpcf7-response-output" aria-hidden="true">※必要事項を入力してください</div>
+  </div>
+  <dl class= "p-sub-contact-list__items">
+    <% for (var contactlist of contactlists) { %>
+      <div class="p-sub-contact-list__item">
+        <dt class="p-sub-contact-list__title"><%= contactlist.title %></dt>
+        <dd class="p-sub-contact-list__text">
+          <% if ( contactlist.type === 'email' ) { %>
+            <span class="wpcf7-form-control-wrap <%= contactlist.name %>">
+              <input type="email" name="<%= contactlist.name %>" value="<%= contactlist.text %>" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email wpcf7-not-valid" aria-required="true" aria-invalid="false">
+            <span>
+          <% } else if( contactlist.type === 'textarea' ) { %>
+            <span class="wpcf7-form-control-wrap <%= contactlist.name %>">
+              <textarea name="<%= contactlist.name %>" cols="40" rows="10" class="wpcf-33-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="<%= contactlist.text %>"></textarea>
+            </span>
+          <% } else { %>
+            <span class="wpcf7-form-control-wrap <%= contactlist.name %>">
+              <input type="text" name="<%= contactlist.name %>" value="<%= contactlist.text %>" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+            </span>
+          <% } %>
+        </dd>
+      </div>
+    <% } %>
+  </dl>
+  <!-- 送信ボタン -->
+  <div class="p-sub-contact__btn c-btn-white">
+    <input type="submit" value="送信" class="wpcf7-form-control has-spinner wpcf7-submit">
+    <span class="wpcf7-spinner"></span>
+  </div>
+</div>
+
+
+

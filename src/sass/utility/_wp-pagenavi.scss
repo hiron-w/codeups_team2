@@ -12,7 +12,7 @@
   border: rem(1) solid $white;
   display: inline-block;
   box-sizing: border-box;
-  letter-spacing: 0.0005em;
+  letter-spacing: rem(0.5);
   text-transform: uppercase;
 	transition: 0.3s ease-in-out;
 	text-align: center;

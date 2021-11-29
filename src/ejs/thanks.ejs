@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+  <body>
+    <%- include('./common/_header') %>
+    <section class="p-sub-thanks">
+      <div class="p-sub-thanks__inner l-inner">
+        <h1 class="p-sub-thanks__title">
+          お問い合わせ完了
+        </h1>
+        <p class="p-sub-thanks__text">
+          3営業日以内に<br class="u-hidden-pc">
+          返信させて頂きます。
+        </p>
+        <div class="p-sub-thanks__btn">
+          <%- include('./parts/_c-btn-black',{text:'TOPへ', link:'#'}) %>
+        </div>
+      </div>
+    </section>
+    <div class="p-sub-thanks__footer">
+      <%- include('./common/_footer') %>
+    </div>
+  </body>
+</html>

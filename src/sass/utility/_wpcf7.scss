@@ -1,0 +1,52 @@
+// Contact Form7デフォルトで設定されるクラス名にに対して設定
+.wpcf7-form-control-wrap input[type="text"],
+.wpcf7-form-control-wrap input[type="email"]{
+  background-color: #FFF;
+  color: #979797;
+  font-size: rem(14);
+  letter-spacing: rem(0.7);
+  line-height: 1.642857;
+  padding: rem(10);
+  width: 100%;
+  max-width: 100%;
+  @include mq(tab){
+    width: rem(540);
+  }
+}
+
+// エラーの場合、項目の背景を変更する
+.wpcf7-form-control-wrap input[ class ~= "wpcf7-not-valid"]{
+  background: #FFDCDC;
+}
+
+.wpcf7-textarea{
+  background-color: #FFF;
+  color: #979797;
+  font-size: rem(14);
+  letter-spacing: rem(0.7);
+  line-height: 1.642857;
+  padding: rem(10);
+  width: 100%;
+  max-width: 100%;
+  height: rem(250);
+  @include mq(tab){
+    width: rem(540);
+    height: rem(300);
+  }
+}
+
+// 項目ごとに表示されるエラーメッセージを非表示にする
+.wpcf7-not-valid-tip{
+  display: none;
+}
+
+// [response]で表示されるメッセージの表示設定
+.wpcf7-response-output{
+  font-size: rem(16);
+  letter-spacing: rem(2);
+  color: #FF5757;
+  border-color:transparent;
+  text-align: center;
+}
+
+
