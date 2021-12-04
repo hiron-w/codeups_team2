@@ -1,0 +1,10 @@
+<div class="p-sub-detail-related">
+  <div class="p-sub-detail-related--title">関連記事</div>
+  <div class="p-sub-detail-related-cards">
+  <% for (var i=0; i < 4; i++) { %>
+    <div class="p-sub-detail-related-cards__card">
+      <%- include('./_p-card.ejs')%>
+    </div><!-- /.p-news-items__item -->
+      <% } %>
+  </div>
+</div>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+<body>
+  <%- include('./common/_header') %>
+
+ <section class="p-sub-works-detail">
+    <div class="l-inner">
+    <div class="p-sub-works-detail__breadcrumb">
+      <!--パンくずリスト-->
+      <%- include('./parts/_c-breadcrumb',{
+        navigationList: [
+        {
+          path: '/',
+          label: 'トップ'
+        },
+        {
+          path: '',
+          label: '制作実績'
+        },
+        {
+          path: ' ',
+          label: '制作実績詳細'
+        },
+        ]
+      }) %>
+    </div>
+    </div>
+
+    <div class="p-sub-works-detail__inner">
+    <!-- 制作実績詳細タイトル -->
+    <div class="p-sub-works-detail__detail-title">
+      <%- include('./parts/_p-sub-detail-title.ejs',{text:'〇〇株式会社様 制作実績'}) %>
+    </div>
+    
+    <!-- swiper -->
+    <div class="p-sub-works-detail__swiper-gallery">
+
+      <!-- pcの時サムネ8枚 -->
+      <div class="swiper-container gallery-slider js-gallery-slider-pc">
+        <!-- メイン -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01.jpg" alt=""></div>
+        </div>
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+        <!-- サムネイル -->
+        <div class="swiper-container gallery-thumbs js-gallery-thumbs-pc">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb01.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb02.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb03.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb04.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb05.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb06.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb07.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb08.jpg" alt=""></div>
+        </div>
+        </div>
+
+        <!-- SPの時サムネ3枚 -->
+        <div class="swiper-container gallery-slider js-gallery-slider-sp">
+          <!-- メイン -->
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01-sp.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01-sp.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./images/common/sub-works-detail-gallery01-sp.jpg" alt=""></div>
+          </div>
+          
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+    <!-- サムネイル -->
+    <div class="swiper-container gallery-thumbs js-gallery-thumbs-sp">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb01-sp.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb02-sp.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/common/sub-works-detail-thumb03-sp.jpg" alt=""></div>
+      </div>
+      </div>
+  </div>
+
+
+
+
+      <!-- ポイント -->
+      <div class="p-sub-works-detail__points">
+      <div class="p-sub-works-detail__point">
+        <span class="p-sub-works-detail__point--title">制作のポイント</span>
+        <p class="p-sub-works-detail__point--text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      </div>
+
+      <div class="p-sub-works-detail__point">
+        <span class="p-sub-works-detail__point--title">デザインのポイント</span>
+        <p class="p-sub-works-detail__point--text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      </div>
+
+      <div class="p-sub-works-detail__point">
+        <span class="p-sub-works-detail__point--title">その他</span>
+        <p class="p-sub-works-detail__point--text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      </div>
+    </div> 
+    </div> <!-- p-sub-works-detail__inner -->
+
+    <!-- ページネーション -->
+    <div class="p-sub-works-detail__detail-pager">
+        <%- include('./parts/_p-sub-detail-pager.ejs',{link:'works.html'}) %>
+    </div>
+ </section>
+
+
+  <!-- 関連記事 -->
+ <section class="p-sub-works-detail__detail-related">
+   <div class="l-inner">
+    <%- include('./parts/_p-sub-detail-related.ejs') %>
+  </div>
+ </section>
+
+
+  <!-- お問い合わせ -->
+  <div class="p-sub-works__inquiry">
+  <%- include('./common/_inquiry') %>
+  </div>
+
+  <!-- ページトップボタン -->
+  <%- include('./parts/_c-page-top') %>
+
+  <!-- フッター -->
+  <%- include('./common/_footer') %>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+.p-sub-detail-related--title{
+  color:$white;
+  background: $gray;
+  text-align: center;
+  padding:rem(8) 0;
+  border: 1px solid $white;
+  letter-spacing: rem(2);
+  margin-bottom: rem(32);
+
+  @include mq(tab){
+    margin-bottom: rem(80);
+  }
+}
+
+.p-sub-detail-related-cards{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  row-gap: rem(24);
+  
+  @include mq(tab){
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: rem(32);
+    margin-bottom: rem(80);
+  }
+
+  @include mq(pc){
+    flex-wrap:nowrap;
+  }
+}
+
+.p-sub-detail-related-card{
+  flex:1;
+}
