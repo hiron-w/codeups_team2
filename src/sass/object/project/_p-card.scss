@@ -1,90 +1,87 @@
 //カード//
-      
-      .p-card__img-wrapper {
-        position: relative;
-        padding-top: 66.57%;
-        overflow: hidden;
-      }
-      
-      .p-card__img {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        transform: translateY(-50%);
-      }
-      
-      .p-card__body {
-        padding: rem(10) rem(24) rem(16);
-        background-color: $white;
-        color: $gray;
-        transition:all 0.3s;
-        -webkit-transition:all 0.3s;
-        -moz-transition:all 0.3s;
-        -ms-transition:all 0.3s;
-        -o-transition:all 0.3s;
+
+.p-card__img-wrapper {
+  position: relative;
+  padding-top: 66.57%;
+  overflow: hidden;
 }
 
-      .p-card__body:hover {
-        background-color: $gray;
-        color: $white;
-      }
+.p-card__img {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
 
-      
-      .p-card__body > *:last-child {
-        margin-bottom: 0;
-      }
-      
-      .p-card__title {
-        margin-bottom: 5px;
-        font-size: rem(18);
-        font-weight: bold;
-        line-height: calc ( 35 / 18 );
-        letter-spacing: rem(1);
+.p-card__body {
+  padding: rem(10) rem(24) rem(16);
+  background-color: $white;
+  color: $gray;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
 
-      }
+.p-card__body:hover {
+  background-color: $gray;
+  color: $white;
+}
 
-      
-      .p-card__text {
-        font-size: rem(14);
-        line-height: calc ( 26 / 14 );
-        letter-spacing: rem(1);
+.p-card__body > *:last-child {
+  margin-bottom: 0;
+}
 
-      }
+.p-card__title {
+  margin-bottom: 5px;
+  font-size: rem(18);
+  font-weight: bold;
+  line-height: calc (35 / 18);
+  letter-spacing: rem(1);
+}
 
-      
-      .p-card__meta{
-        margin-top: rem(5);
-        display: flex;
-        justify-content: space-between;
-      }
+.p-card__text {
+  font-size: rem(14);
+  line-height: calc (26 / 14);
+  letter-spacing: rem(1);
+}
 
-      .p-card__meta:hover{
-        color: $white;
-      }
+.p-card__meta {
+  margin-top: rem(5);
+  display: flex;
+  justify-content: space-between;
+}
 
-      .p-card__mata--date:hover{
-        color: $white;
+.p-card__meta:hover {
+  color: $white;
+}
 
-      }
+.p-card__mata--date:hover {
+  color: $white;
+}
 
 //ブログカードのオレンジnewマーク
+.p-cards__item {
+  position: relative;
+}
 
-     .p-cards__item:first-child:before {
-        align-items: center;
-        background: #FFBA6A;
-        border-radius: 50%;
-        color: #333;
-        content: "New";
-        display: flex;
-        font-family: 'Noto Serif JP',serif;
-        font-size: 1rem;
-        height: 3.75rem;
-        justify-content: center;
-        left: 0;
-        letter-spacing: 0.125em;
-        position: absolute;
-        top: 0;
-        transform: translate(-30%, -30%);
-        width: 3.75rem;
-        z-index: 2;
-    }
+.p-cards__item:first-child:before {
+  align-items: center;
+  background: #ffba6a;
+  border-radius: 50%;
+  color: #333;
+  content: "New";
+  display: flex;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1rem;
+  height: 3.75rem;
+  justify-content: center;
+  left: 0;
+  letter-spacing: 0.125em;
+  position: absolute;
+  top: 0;
+  transform: translate(-30%, -30%);
+  width: 3.75rem;
+  z-index: 2;
+}
