@@ -1,28 +1,13 @@
                           <!--カード複数・3枚横並び-->
 
-
-  
                           <div class="l-cards p-cards">
+                            <% for (var i=0; i < number; i++) { %>
                             <div class="p-cards__item">
-                            <%- include('../parts/_p-card') %>
-                            </div>
-                            <div class="p-cards__item">
-                            <%- include('../parts/_p-card') %>
-                            </div>
-                            <div class="p-cards__item">
-                            <%- include('../parts/_p-card') %>
-                            </div>
-                            <div class="p-cards__item">
-                            <%- include('../parts/_p-card') %>
-                            </div>
-                            <div class="p-cards__item">
-                            <%- include('../parts/_p-card') %>
-                            </div>
-                            <div class="p-cards__item">
-                            <%- include('../parts/_p-card') %>
-                            </div>
-                            <div class="p-cards__item">
-                            <%- include('../parts/_p-card') %>
-                            </div>
-                          </div> 
-                          <!-- /.p-cards -->
+                              <%- include('./_p-card',
+                              {text:'カテゴリ',datetime:'2021-07-20'}
+                              ) %>
+                            </div><!-- /.p-cards__item -->
+                              <% } %>                          
+                            </div> 
+                            <!-- /.p-cards -->
+  
