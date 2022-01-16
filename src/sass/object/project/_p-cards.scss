@@ -4,8 +4,9 @@
     margin: rem(24) auto 0;
 
     @include mq(tab){
-        margin: rem(24) rem(24) 0 0;
         width: calc(33.3333333% - 48px / 3);
+        margin: rem(24) rem(24) 0 0;
+
     }
 }
 
@@ -14,5 +15,12 @@
     @include mq(tab){
         margin-right: 0;
 
+    }
+}
+
+
+.p-cards__item:nth-child(n+4) {
+    @include mq(tab){
+        margin-top: rem(48);
     }
 }
