@@ -6,69 +6,74 @@
         <!--header-->
         <%- include('./common/_header') %>
 
-
             <!--ブログ詳細-->
             <section class="p-sub-blog--single l-inner">
                 <div class="p-sub-blog--single__breadcrumb">
                     <%- include('./parts/_c-breadcrumb',{ navigationList: [ { path: '/' , label: 'トップ' }, { path: '' ,
                         label: 'ブログ記事一覧' }, { path: '' , label: 'ブログ記事詳細' } ] }) %>
-
                 </div>
-
-                <div class="p-sub-blog--single__item blog-single">
-                    <h1 class="blog-single__title">
-                        タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </h1>
-                    <div class="blog-single__meta">
-
+                
+                <div class="p-sub-blog--single__item blog-single p-sub-blog-single__inner">
+                    <!-- ブログ詳細タイトル -->  
+                    <div class="blog-single__title">
+                        <%- include('./parts/_p-sub-detail-title.ejs',{text:'タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。'}) %>
                     </div>
                     <div class="blog-single__image1">
-                        <img src="/images/common/blog_1.jpg" alt="">
+                        <img src="/images/common/blog-detail_1.jpg" alt="">
                     </div>
-                    <p class="blog-single__text1">
+                    <p class="blog-single__text blog-single__text1">
                         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                     </p>
 
                     <h2 class="blog-single__title2">
                         見出し２
                     </h2>
-                    <p class="blog-single__text2">
+                    <p class="blog-single__text blog-single__text2">
                         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                     </p>
 
                     <h3 class="blog-single__title3">
                         見出し３見出し３見出し３見出し３
                     </h3>
-                    <p class="blog-single__text3">
+                    <p class="blog-single__text blog-single__text3">
                         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                     </p>
 
                     <div class="blog-single__image2">
-                        <img src="/images/common/blog_2.jpg" alt="">
+                        <img src="/images/common/blog-detail_2.jpg" alt="">
                     </div>
 
-                    <p class="blog-single__text4">
-                        ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。
-                        ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。
-                        ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。
-                        ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。
-                    </p>
+                    <ul class="blog-single__text blog-single__text4">
+                        <li>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+                        <li>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+                        <li>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+                        <li>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+                        <li>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+                    </ul>
 
-                    <p class="blog-single__texst5">
-                        ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。
-                        ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。
-                        ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。
-                        ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。
-                    </p>
+                    <ul class="blog-single__text blog-single__text5">
+                        <li>１リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+                        <li>２リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+                        <li>３リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+                        <li>４リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+                        <li>５リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+                    </ul>
 
                 </div>
-                <div class="blog-single__pager">
 
-                    
+                <!-- ページネーション -->
+                <div class="p-sub-blog-single__pager">
+                    <%- include('./parts/_p-sub-detail-pager.ejs',{link:'works.html'}) %>
                 </div>
 
             </section>
 
+            <!-- 関連記事 -->
+            <section class="p-sub-blog-detail__detail-related">
+                <div class="l-inner">
+                    <%- include('./parts/_p-sub-detail-related.ejs') %>
+                </div>
+            </section>
 
 
             <!-- お問い合わせ -->
@@ -80,8 +85,8 @@
             <%- include('./parts/_c-page-top') %>
 
                 　
-                <!--footer-->
-                <%- include('./common/_footer') %>
+            <!--footer-->
+            <%- include('./common/_footer') %>
     </body>
 
 </html>
