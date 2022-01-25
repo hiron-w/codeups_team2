@@ -5,27 +5,29 @@
 }
 
 .p-404__title{
-  padding-top: rem(130);  //headerのTop指定がないため、marginではなくpaddingとした。
+  padding-top: rem(115);  //headerのTop指定がないため、marginではなくpaddingとした。
   font-size: rem(40);
   color: $yellow;
   opacity: 0.3;
   font-weight: normal;
   @include mq(tab){
     font-size: rem(60);
-    padding-top: rem(200);  //headerのTop指定がないため、marginではなくpaddingとした。
+    padding-top: rem(170);  //headerのTop指定がないため、marginではなくpaddingとした。
   }
 }
 
 .p-404__text{
-  margin-top: rem(80);
+  margin-top: rem(65);
   font-size: rem(20);
+  line-height: 1.5;
   @include mq(tab){
+    margin-top: rem(45);
     font-size: rem(30);
   }
 }
 
 .p-404__footer{
-  margin-top: rem(120);
+  margin-top: rem(170);
 }
 
 .p-404__btn{
@@ -33,9 +35,9 @@
   @include mq(tab){
     font-size: rem(16);
     display: block;
-    margin: rem(80) auto 0;
+    margin: rem(75) auto 0;
     width: rem(360);
     max-width: 100%;
-    padding: rem(10);
+    // padding: rem(10);
   }
 }

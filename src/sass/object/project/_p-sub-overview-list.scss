@@ -2,10 +2,10 @@
   display: flex;
   font-size: rem(13);
   border-bottom: 1px solid $white;
-  padding: rem(14) 0 rem(19) rem(5);
+  padding: rem(18) 0 rem(20) rem(1);
   @include mq(tab){
     font-size: rem(16);
-    padding: rem(34) rem(5) rem(28) rem(5);
+    padding: rem(30) rem(5) rem(26) 0;
   }
 }
 
