@@ -20,9 +20,9 @@
 
 .p-sub-overview-list__text{
   margin-left: rem(14);
-  max-width: 100% - #{rem(100)};
+  max-width: calc(100% - #{rem(100)});
   width: 100%;
   @include mq(tab){
-    max-width: 100% - #{rem(143)};
+    max-width: calc(100% - #{rem(143)});
   }
 }
