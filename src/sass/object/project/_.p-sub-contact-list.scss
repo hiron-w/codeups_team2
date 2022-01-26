@@ -16,7 +16,7 @@
 .p-sub-contact-list__items{
   margin-top: rem(32);
   @include mq(tab){
-    margin-top: rem(30);
+    margin-top: rem(28);
   }
 }
 
@@ -29,6 +29,9 @@
 
 .p-sub-contact-list__item:not(:first-child){
   margin-top: rem(32);
+  @include mq(tab){
+    margin-top: rem(44);
+  }
 }
 
 .p-sub-contact-list__title{
@@ -43,7 +46,7 @@
 }
 
 .p-sub-contact-list__text{
-  margin-top: rem(12);
+  margin-top: rem(18);
   @include mq(tab){
     margin-top: 0;
     margin-left: rem(24);

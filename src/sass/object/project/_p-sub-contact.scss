@@ -1,20 +1,21 @@
 .p-sub-contact__lists{
-    margin-top: rem(30);
+    margin-top: rem(26);
     @include mq(tab){
-      margin-top: rem(62);
+      margin-top: rem(58);
     }
 }
 
 .p-sub-contact__breadcrumb{
-  margin-top: rem(16);
+  margin-top: rem(12);
 }
 
 .p-sub-contact__btn {
   width: rem(335);
   max-width: 100%;
-  margin: rem(48) auto 0;
+  margin: rem(42) auto 0;
   @include mq(tab){
     width: rem(360);
+    margin: rem(50) auto 0;
   }
 }
 
@@ -26,6 +27,10 @@
   box-sizing: border-box;
   width: inherit;
   height: inherit;
+  @include mq(tab){
+    font-size: rem(16);
+    padding: rem(17);
+  }
 }
 
 .p-sub-contact__btn input[type="submit"]:hover {
@@ -35,4 +40,7 @@
 
 .p-sub-contact__footer{
   margin-top: rem(130);
+  @include mq(tab){
+    margin-top: rem(174);
+  }
 }
