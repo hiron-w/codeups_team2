@@ -60,20 +60,28 @@
 }
 
 .p-top-mediaText__swiper-pagenation.swiper-pagination {
-  text-align: center;
+
+  @include mq(tab) {
+    left: rem(-22);
+    
+  }
   
 }
 
-.swiper-pagination-bullet {
-  margin-left: rem(5);
-  margin-right: rem(5);
+.p-top-mediaText .swiper-pagination-bullet {
+  margin-left: rem(6);
+  margin-right: rem(6);
   width: rem(8);
   height: rem(8);
   background: #C4C4C4;
   opacity: 1;
 }
 
-.swiper-pagination-bullet-active  {
+.p-top-mediaText .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,6px);
+}
+
+.p-top-mediaText .swiper-pagination-bullet-active  {
   background: $english-yellow;
 }
 
@@ -146,20 +154,26 @@
 .p-top-mediaText__body {
   padding: 0 0 rem(21);
   @include mq(tab) {
-    padding: rem(40) 0 0;
+    padding: rem(25) 0 0;
     width: 510 / 1100 * 100%;
   }
 }
 .p-top-mediaText__body.p-top-mediaText__body-reverse {
-  padding: rem(24) 0 rem(21);
+  padding: rem(32) 0 rem(21);
+  @include mq(tab) {
+    padding: rem(24) 0 rem(21);
+    
+  }
 }
 
 .p-top-mediaText__title {
  font-size:rem(20) ;
  letter-spacing: 0.1em;
  text-align: center;
+ margin-top: rem(-10);
 
  @include mq(tab) {
+   margin-top: initial;
    font-size: rem(25);
    letter-spacing: 0.025em;
    text-align: left;
@@ -175,8 +189,9 @@
 
 @include mq(tab) {
   font-size: rem(16);
-  letter-spacing: 0.3125em;
-  margin-top: rem(48);
+  letter-spacing: 0.0313em;
+  margin-top: rem(35);
+  line-height: 2.1875;
 
 
 }

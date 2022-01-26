@@ -3,19 +3,22 @@
 }
 
 .p-top-overview::before {
-
+  content: "";
+  display: block;
+  width: rem(1);
+  height: calc(1448/ 375 * 100vw);
+  background: $english-yellow;
+  position: absolute;
+  top: -91%;
+  left: 46%;
+  transform: rotate(15deg);
+  z-index: -1;
   @include mq(tab) {
     
     content: "";
-    display: block;
-    width: rem(1);
     height: calc(1712 / 1280 * 100vw);
-    background: $english-yellow;
-    position: absolute;
-    top: -63%;
-    left: 46%;
+    top: -70%;
     transform: rotate(45deg);
-    z-index: -1;
     
   }
   }
@@ -37,7 +40,7 @@
     transform: translateX(-50%);
     font-family: 'Noto Serif JP',serif;
     opacity: 0.27;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
 
 
     @include mq(tab) {
@@ -51,5 +54,10 @@
 
 
 .p-top-overview__body {
+margin-top: rem(44);
+@include mq(tab) {
   margin-top: rem(40);
+  
+}
+
 }

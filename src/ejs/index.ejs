@@ -113,90 +113,11 @@
        <%- include('./common/_inquiry') %>
      </section><!-- /.l-top-contact -->
     
+  <!--ページトップボタン-->
+  <%- include('./parts/_c-page-top') %>
+
      <!--フッター-->
     <%- include('./common/_footer') %>
-
-
-
-
-
-<!--共通パーツサンプル（ひろこ）-->
-                <!--セクションタイトル日本語 -->
-                <p>セクションタイトル/c-section-title</p>
-                <%- include('./parts/_c-section-title',{text:'制作実績'}) %>
-                  <%- include('./parts/_c-section-title',{text:'ブログ'}) %>
-
-                    <!--お問い合わせセクション-->
-                    <p>お問い合わせセクション/inquiry</p>
-                    <%- include('./common/_inquiry') %>
-
-                      <!--日付-->
-                      <p>日付</p>
-                      <%- include('./parts/_c-date',{text:'2021.07.20', datetime:'2021-07-20'}) %>
-
-                        <!--カテゴリーのラベル-->
-                        <p>カテゴリーのラベル/c-label</p>
-                        <%- include('./parts/_c-label',{text:'カテゴリ'}) %>
-
-                          <!--カテゴリーのラベル黄色バージョン-->
-                          <p>カテゴリーのラベル（ブログ用・黄色）/c-label-blog</p>
-                          <%- include('./parts/_c-label-blog',{text:'カテゴリ'}) %>
-
-                          <!--カード単体-->
-                          <p>カード単体/p-card</p>
-                            <%- include('./parts/_p-card') %>
-
-                          <!--カード複数・3枚横並び-->
-                          <p>カード複数・3枚横並び/p-cards</p>
-                            <%- include('./parts/_p-card') %>
-
-
-
-                              <!--共通パーツサンプル（ひろこ）ここまで-->
-
-
- <!--共通パーツサンプル（sassy）-->
-
-           <!--下層ページMV-->
-          <%- include('./parts/_p-sub-mv',{
-            title:'お知らせ',
-            spImage:'/images/common/sub-news-mv-sp.jpg',
-            pcImage:'/images/common/sub-news-mv-pc.jpg'
-          }) %>
-          
-
-          <!--お知らせ一覧  numberの数字を変えて繰り返し調整可能-->
-          <%- include('./parts/_p-news-items',{number:5}) %>
-          
-          
-          <!--パンくずリスト-->
-          <%- include('./parts/_c-breadcrumb',{
-            navigationList: [
-            {
-              path: ' リンク先パス ',
-              label: 'トップ'
-            },
-            {
-              path: ' リンクパス ',
-              label: 'ページ名'
-            }
-            ]
-          }) %>
-          
-          <%# パンくずリストが３つ以上になる時は、
-          {
-            path: ' ',
-            label: ' '
-          },
-          を1つ増やせば対応できます %>
-          
-          
-          <!--ページトップボタン-->
-          <%- include('./parts/_c-page-top') %>
-          
-          
-
-          <!--共通パーツサンプル（sassy）ここまで-->
 
 
         </body>

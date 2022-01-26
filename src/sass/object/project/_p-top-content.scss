@@ -3,18 +3,21 @@
 }
 
 .p-top-content::before {
-
-  @include mq(tab) {
-    content: "";
+  content: "";
     display: block;
     width: rem(1);
-    height: calc(1714 / 1280 * 100vw);
+    height: calc(770 / 375 * 100vw);
     background: $english-yellow;
     position: absolute;
-    top: -95%;
+    top: -24%;
     left: 46%;
-    transform: rotate(-45deg);
+    transform: rotate(-29deg);
     z-index: -1;
+
+  @include mq(tab) {
+    height: calc(1714 / 1280 * 100vw);
+    top: -91%;
+    transform: rotate(-45deg);
     
   }
   }
@@ -36,18 +39,23 @@
     transform: translateX(-50%);
     font-family: 'Noto Serif JP',serif;
     opacity: 0.27;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.02em;
 
 
     @include mq(tab) {
         font-size: rem(110);
         letter-spacing: normal;
-        top: -172%;
-        left:  calc(50% - #{rem(546)});
+        top: -150%;
+        left:  calc(50% - #{rem(554)});
         transform: none;
+        letter-spacing: 0.017em;
 }
 }
 
 .p-top-content__body {
- margin-top: rem(40);
+ margin-top: rem(46);
+  @include mq(tab) {
+    margin-top: rem(49);
+    
+  }
 }

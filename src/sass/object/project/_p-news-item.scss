@@ -15,13 +15,13 @@
 .p-news-item__category{
   display: inline-block;
   font-size: rem(14);
-  padding: rem(6) rem(21);
+  padding: rem(7) rem(21);
   line-height: 1;
   margin-left: rem(29);
   border: 1px solid $white;
 
   @include mq(tab) {
-    margin-left: rem(48);
+    margin-left: rem(44);
   }
 
 }
