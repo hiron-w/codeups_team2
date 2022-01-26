@@ -14,12 +14,12 @@
     font-size: rem(50);
     color: $english-yellow;
     position: absolute;
-    top: -160%;
+    top: -167%;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Noto Serif JP',serif;
     opacity: 0.27;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
 
 
     @include mq(tab) {
@@ -32,6 +32,10 @@
 }
 
 .p-top-works__body {
-  margin-top: rem(40);
+  margin-top: rem(44);
+  @include mq(tab) {
+    margin-top: rem(40);
+    
+  }
 }
 

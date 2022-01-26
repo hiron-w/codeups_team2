@@ -11,12 +11,12 @@
     font-size: rem(50);
     color: $english-yellow;
     position: absolute;
-    top: -160%;
+    top: -166%;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Noto Serif JP',serif;
     opacity: 0.27;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
 
 
     @include mq(tab) {
@@ -31,7 +31,11 @@
 
 
 .p-top-blog__body {
-  margin-top: rem(13);
+  margin-top: rem(62);
+  @include mq(tab) {
+    margin-top: rem(13);
+    
+  }
 }
 
 
@@ -53,8 +57,8 @@
   color: $gray;
   letter-spacing: 0.125em;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: rem(2);
+  left: rem(4);
   transform: translate(-30%, -30%);
   z-index: 2;
   

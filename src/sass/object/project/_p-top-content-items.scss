@@ -42,11 +42,11 @@
 
 .p-top-content-items__img {
   position: relative;
-  
+  height: 100%;
   }
   
   .p-top-content-items__img::before {
-    padding-top: 168 / 188 * 100%; //画像縦 / 横
+    padding-top: 86.3617%; //画像縦 / 横
     display: block;
     content: "";
     
