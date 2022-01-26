@@ -1,18 +1,24 @@
 
 .p-sub-content__title{
-    font-size: rem(25);
+    font-size: rem(20);
     text-align: center;
-    margin-top: rem(60);
+    margin-top: rem(74);
+
+    @include mq(tab){
+        font-size: rem(25);
+    }
 
 }
 
 .p-sub-content__text{
     text-align: left;
     margin-top: rem(20);
-    line-height: (35 / 16);
+    line-height: 1.7;
 
     @include mq(tab){
         text-align: center;
+        line-height: (35 / 16);
+
     }
 }
 
@@ -26,14 +32,28 @@
 }
 
 .p-sub-content__item{
-    margin-top: rem(104);
-}
-
-.p-sub-content__inquiry{
-    margin-top: rem(120);
+    margin-top: rem(86);
 
     @include mq(tab){
-        margin-top: rem(150);
+        margin-top: (104);
+    }
+}
+
+.p-sub-content__item:first-child{
+    margin-top: rem(-18);
+
+    @include mq(tab){
+        margin-top: (104);
+    }
+}
+
+
+
+.p-sub-content__inquiry{
+    margin-top: rem(160);
+
+    @include mq(tab){
+        margin-top: rem(202);
 
     }
 }
