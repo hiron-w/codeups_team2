@@ -6,6 +6,8 @@
 
     @include mq(tab){
         font-size: rem(25);
+        margin-top: rem(60);
+
     }
 
 }
@@ -18,6 +20,7 @@
     @include mq(tab){
         text-align: center;
         line-height: (35 / 16);
+        letter-spacing: 0.12em;
 
     }
 }
@@ -29,13 +32,18 @@
 
 .p-sub-content__items{
     margin-top: rem(45);
+
+    @include mq(tab){
+        margin-top: rem(147);
+
+    }
 }
 
 .p-sub-content__item{
     margin-top: rem(86);
 
     @include mq(tab){
-        margin-top: (104);
+        margin-top: rem(100);
     }
 }
 
@@ -43,17 +51,23 @@
     margin-top: rem(-18);
 
     @include mq(tab){
-        margin-top: (104);
+        margin-top: rem(104);
     }
 }
 
+.p-sub-content__item:nth-child(3) .p-media__title{
+    @include mq(tab){
+        margin-top: 0;
+    }
+
+}
 
 
 .p-sub-content__inquiry{
     margin-top: rem(160);
 
-    @include mq(tab){
-        margin-top: rem(202);
+    // @include mq(tab){
+    //     margin-top: rem(202);
 
-    }
+    // }
 }
