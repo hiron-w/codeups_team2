@@ -3,7 +3,7 @@
   width:rem(24);
   height:rem(50);
 
-  @include mq("pc"){
+  @include mq("tab"){
     display:none;
   }
 }

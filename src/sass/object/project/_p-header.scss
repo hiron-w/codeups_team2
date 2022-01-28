@@ -12,7 +12,7 @@
   align-items: center;
   padding:rem(2) rem(22);
 
-  @include mq("pc") {
+  @include mq("tab") {
     padding:0 0 0 rem(33);
   }
 }
@@ -24,7 +24,7 @@
 .p-header__logo img{
   width:rem(70);
 
-  @include mq("pc") {
+  @include mq("tab") {
   width:rem(94);
   }
 }

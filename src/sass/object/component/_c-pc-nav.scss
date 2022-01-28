@@ -1,7 +1,7 @@
 .c-pc-nav{
   display:none;
 
-  @include mq("pc"){
+  @include mq("tab"){
     display: flex;
   }
 }
