@@ -27,7 +27,7 @@
 }
 
 .u-sp{
-	//tab以上で表示
+	//tab以上で非表示
 	display: block;
 
 	@include mq("tab") {
