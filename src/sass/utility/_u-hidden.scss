@@ -17,11 +17,20 @@
 }
 
 
-.u-hidden-tab{
+.u-tab{
 	//tab以上で表示
 	display: none;
 
 	@include mq("tab") {
 		display: block;
+	}
+}
+
+.u-sp{
+	//tab以上で表示
+	display: block;
+
+	@include mq("tab") {
+		display: none;
 	}
 }
