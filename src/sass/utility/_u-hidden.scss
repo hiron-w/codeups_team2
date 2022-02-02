@@ -26,11 +26,3 @@
 	}
 }
 
-.u-sp{
-	//tab以上で非表示
-	display: block;
-
-	@include mq("tab") {
-		display: none;
-	}
-}
