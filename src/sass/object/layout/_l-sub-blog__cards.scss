@@ -1,0 +1,8 @@
+.l-sub-blog__cards{
+    margin-top: rem(-10);
+
+    @include mq(tab){
+        margin-top: 0;
+
+    }
+}

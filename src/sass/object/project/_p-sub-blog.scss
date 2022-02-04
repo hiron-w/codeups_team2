@@ -4,10 +4,30 @@
 }
 
 .p-sub-blog__tab{
-    margin-top: rem(90);
+    margin-top: rem(80);
+
+    @include mq(tab){
+        margin-top: rem(110);
+    }
 }
 
 .p-sub-blog__pager{
-    margin-top: rem(100);
+    margin-top: rem(78);
     text-align: center;
+
+    @include mq(tab){
+        margin-top: rem(100);
+
+    }
+
+}
+
+.p-sub-blog__inquiry{
+    margin-top: rem(120);
+
+    @include mq(tab){
+        margin-top: rem(163);
+
+    }
+
 }

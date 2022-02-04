@@ -2,8 +2,13 @@
 
 .p-card__img-wrapper {
   position: relative;
-  padding-top: 66.57%;
+  padding-top: 69%;
   overflow: hidden;
+
+  @include mq(tab){
+    padding-top: 66.6%;
+
+  }
 }
 
 .p-card__img {
@@ -14,7 +19,7 @@
 }
 
 .p-card__body {
-  padding: rem(10) rem(24) rem(16);
+  padding: rem(8) rem(24) rem(16);
   background-color: $white;
   color: $gray;
   transition: all 0.3s;
@@ -34,7 +39,7 @@
 }
 
 .p-card__title {
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
   font-size: rem(18);
   font-weight: bold;
   line-height: calc (35 / 18);
@@ -45,10 +50,11 @@
   font-size: rem(14);
   line-height: calc (26 / 14);
   letter-spacing: rem(1);
+  margin-top: rem(12);
 }
 
 .p-card__meta {
-  margin-top: rem(5);
+  margin-top: rem(10);
   display: flex;
   justify-content: space-between;
 }
@@ -61,27 +67,3 @@
   color: $white;
 }
 
-//ブログカードのオレンジnewマーク
-.p-cards__item {
-  position: relative;
-}
-
-.p-cards__item:first-child:before {
-  align-items: center;
-  background: #ffba6a;
-  border-radius: 50%;
-  color: #333;
-  content: "New";
-  display: flex;
-  font-family: "Noto Serif JP", serif;
-  font-size: 1rem;
-  height: 3.75rem;
-  justify-content: center;
-  left: 0;
-  letter-spacing: 0.125em;
-  position: absolute;
-  top: 0;
-  transform: translate(-30%, -30%);
-  width: 3.75rem;
-  z-index: 2;
-}

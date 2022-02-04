@@ -13,6 +13,14 @@
   }
 }
 
+.c-tab__item:nth-child(n + 4){
+  margin-top: rem(17);
+
+  @include mq(tab){
+    margin-top: 0;
+  }
+}
+
 .c-tab__item:hover{
   background-color: $gray;
 }
