@@ -1,7 +1,12 @@
 //*ブログ記事詳細*//
 
 .p-sub-blog--single__breadcrumb {
-    padding-top: rem(70);
+    padding-top: rem(60);
+
+    @include mq(tab){
+        padding-top: rem(62);
+
+    }
 }
 
 .p-sub-blog-single__inner {
@@ -23,8 +28,7 @@
     margin-top: rem(24);
 
     @include mq(tab) {
-        // line-height: calc( 35 / 16 );
-        margin-top: rem(32);
+        margin-top: rem(30);
     }
 }
 
@@ -44,6 +48,11 @@
     display: inline-block;
     font-size: rem(18);
     position: relative;
+
+    @include mq(tab){
+        margin-top: rem(33);
+
+    }
 }
 
 .blog-single__title3::after {
@@ -57,7 +66,7 @@
 
 .blog-single__image1,
 .blog-single__image2 {
-    margin: rem(16) calc(50% - 50vw) 0;
+    margin: rem(20) calc(50% - 50vw) 0;
     width: 100vw;
 
     @include mq(tab) {
@@ -75,7 +84,7 @@
 
 .p-sub-blog-single__pager {
     text-align: center;
-    margin: rem(120) 0;
+    margin: rem(80) 0 rem(117);
 
     @include mq(tab) {
         margin: rem(104) 0;
